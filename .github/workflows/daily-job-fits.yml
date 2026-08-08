@@ -1,0 +1,93 @@
+name: Daily Job Fits
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: Send the optional email digest during this manual run
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: '17 8 * * *'
+      timezone: 'America/New_York'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-job-fits
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Validate configuration
+        run: python -m jobfit validate
+
+      - name: Run test suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Collect and rank jobs
+        env:
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURITY: ${{ secrets.SMTP_SECURITY }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        shell: bash
+        run: |
+          args=()
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.send_email }}" != "true" ]]; then
+            args+=(--no-email)
+          fi
+          python -m jobfit run "${args[@]}"
+
+      - name: Persist state, history, and generated dashboard
+        shell: bash
+        run: |
+          git config user.name "job-fit-daily[bot]"
+          git config user.email "job-fit-daily[bot]@users.noreply.github.com"
+          git add site data
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Update daily job fits [skip ci]"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload dashboard for GitHub Pages
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+          include-hidden-files: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v5

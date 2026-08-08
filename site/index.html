@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="A private, candidate-specific daily job fit dashboard.">
+  <title>Michael&#x27;s Daily Job Fits</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #08111f;
+      --surface: #101d2f;
+      --surface-raised: #14243a;
+      --surface-soft: #0d1929;
+      --border: rgba(176, 200, 229, 0.18);
+      --border-strong: rgba(176, 200, 229, 0.35);
+      --text: #edf4ff;
+      --muted: #9eb0c6;
+      --faint: #6f839d;
+      --accent: #83d9c5;
+      --accent-strong: #b1f1df;
+      --gold: #f0cf7b;
+      --danger: #ff9a9a;
+      --success: #9ce6b4;
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.24);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% -10%, rgba(67, 137, 154, 0.24), transparent 34rem),
+        radial-gradient(circle at 95% 3%, rgba(147, 100, 57, 0.16), transparent 30rem),
+        var(--background);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    button, select, input[type="checkbox"] { cursor: pointer; }
+    code {
+      padding: .1rem .35rem;
+      border: 1px solid var(--border);
+      border-radius: .35rem;
+      background: rgba(255,255,255,.05);
+      font-size: .9em;
+    }
+    .page-shell { width: min(1280px, calc(100% - 32px)); margin: 0 auto; padding-bottom: 72px; }
+    .hero { padding: 56px 0 28px; }
+    .eyebrow {
+      display: flex; align-items: center; gap: 9px; margin-bottom: 12px;
+      color: var(--accent); font-size: .76rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--accent); }
+    h1 { margin: 0; max-width: 900px; font-size: clamp(2.2rem, 5vw, 4.7rem); line-height: .98; letter-spacing: -.055em; }
+    .hero-copy { max-width: 790px; margin: 20px 0 0; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.2rem); }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 20px; color: var(--faint); font-size: .88rem; }
+    .hero-meta strong { color: var(--text); font-weight: 650; }
+    .demo-banner {
+      margin: 6px 0 24px; padding: 12px 15px; border: 1px solid rgba(240,207,123,.38);
+      border-radius: 12px; background: rgba(240,207,123,.08); color: #f7e5b7;
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin: 10px 0 24px; }
+    .stat {
+      padding: 17px; border: 1px solid var(--border); border-radius: 14px;
+      background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+    }
+    .stat-value { font-size: 1.55rem; font-weight: 800; letter-spacing: -.035em; }
+    .stat-label { margin-top: 2px; color: var(--faint); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+    .toolbar {
+      position: sticky; top: 10px; z-index: 10; display: grid;
+      grid-template-columns: minmax(210px, 1.7fr) repeat(3, minmax(130px, .7fr)); gap: 11px;
+      padding: 14px; border: 1px solid var(--border-strong); border-radius: var(--radius);
+      background: rgba(9, 20, 34, .91); box-shadow: var(--shadow); backdrop-filter: blur(20px);
+    }
+    .control { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+    .control label { color: var(--faint); font-size: .7rem; font-weight: 750; text-transform: uppercase; letter-spacing: .09em; }
+    input[type="search"], select {
+      width: 100%; min-height: 42px; padding: 9px 11px; color: var(--text);
+      border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); outline: none;
+    }
+    input[type="search"]:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(131,217,197,.12); }
+    .toolbar-row {
+      grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 9px 18px;
+      padding-top: 2px; color: var(--muted); font-size: .85rem;
+    }
+    .check { display: inline-flex; align-items: center; gap: 7px; }
+    .score-control { display: inline-flex; align-items: center; gap: 8px; min-width: min(380px, 100%); flex: 1; }
+    input[type="range"] { flex: 1; accent-color: var(--accent); }
+    .score-readout { min-width: 30px; color: var(--accent-strong); font-weight: 800; }
+    .toolbar-button {
+      border: 1px solid var(--border); border-radius: 9px; background: rgba(255,255,255,.04);
+      color: var(--muted); padding: 7px 10px;
+    }
+    .toolbar-button:hover { color: var(--text); border-color: var(--border-strong); }
+    .results-bar { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin: 26px 2px 12px; color: var(--muted); }
+    .results-bar strong { color: var(--text); }
+    .job-list { display: grid; gap: 15px; }
+    .job-card {
+      display: grid; grid-template-columns: 88px minmax(0, 1fr); overflow: hidden;
+      border: 1px solid var(--border); border-radius: var(--radius); background: linear-gradient(145deg, var(--surface-raised), var(--surface));
+      box-shadow: 0 12px 36px rgba(0,0,0,.13); transition: border-color .16s ease, transform .16s ease;
+    }
+    .job-card:hover { transform: translateY(-1px); border-color: var(--border-strong); }
+    .job-card[data-status="applied"] { border-color: rgba(156,230,180,.5); }
+    .job-card[data-status="saved"] { border-color: rgba(240,207,123,.48); }
+    .score-column {
+      padding: 22px 12px; border-right: 1px solid var(--border); background: rgba(3, 11, 21, .24); text-align: center;
+    }
+    .score-number { font-size: 1.75rem; font-weight: 900; letter-spacing: -.055em; color: var(--accent-strong); }
+    .score-label { color: var(--faint); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; }
+    .score-tier { margin-top: 9px; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .score-tier.high { color: var(--success); }
+    .score-tier.good { color: var(--gold); }
+    .score-tier.possible { color: var(--muted); }
+    .job-body { min-width: 0; padding: 21px 22px 18px; }
+    .job-top { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+    .title-wrap { min-width: 0; }
+    .badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 7px; }
+    .badge {
+      display: inline-flex; align-items: center; min-height: 22px; padding: 3px 8px;
+      border-radius: 999px; color: var(--muted); background: rgba(255,255,255,.055); font-size: .68rem; font-weight: 750;
+    }
+    .badge.new { color: #07151b; background: var(--accent); }
+    .badge.family { color: #f4dfad; background: rgba(240,207,123,.13); }
+    .badge.status { color: var(--success); background: rgba(156,230,180,.11); }
+    .job-title { margin: 0; font-size: clamp(1.25rem, 2.3vw, 1.72rem); line-height: 1.18; letter-spacing: -.025em; }
+    .job-title a { text-decoration: none; }
+    .job-title a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+    .company { margin-top: 5px; color: var(--accent-strong); font-weight: 720; }
+    .meta { display: flex; flex-wrap: wrap; gap: 7px 16px; margin: 14px 0 0; color: var(--muted); font-size: .86rem; }
+    .meta span { display: inline-flex; align-items: center; gap: 5px; }
+    .description { margin: 16px 0 0; color: #c4d0df; }
+    .fit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+    .fit-box { padding: 13px 14px; border: 1px solid var(--border); border-radius: 12px; background: rgba(2,10,20,.18); }
+    .fit-box h3 { margin: 0 0 7px; font-size: .72rem; color: var(--faint); letter-spacing: .1em; text-transform: uppercase; }
+    .fit-box ul { margin: 0; padding-left: 18px; }
+    .fit-box li { margin: 4px 0; color: #ccd8e6; font-size: .87rem; }
+    .fit-box.concerns li { color: #d7c3be; }
+    .skills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .skill { padding: 3px 7px; border: 1px solid rgba(131,217,197,.22); border-radius: 7px; color: var(--accent-strong); font-size: .72rem; }
+    .job-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .source { color: var(--faint); font-size: .76rem; }
+    .source a { color: var(--muted); text-underline-offset: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 7px; }
+    .action {
+      min-height: 36px; padding: 7px 11px; border: 1px solid var(--border); border-radius: 9px;
+      background: rgba(255,255,255,.035); color: var(--muted); font-weight: 680; font-size: .8rem;
+    }
+    .action:hover, .action.active { color: var(--text); border-color: var(--border-strong); background: rgba(255,255,255,.075); }
+    .action.saved.active { color: var(--gold); border-color: rgba(240,207,123,.45); }
+    .action.applied.active { color: var(--success); border-color: rgba(156,230,180,.45); }
+    .action.hide.active { color: var(--danger); border-color: rgba(255,154,154,.38); }
+    .view-role { color: #07151b; background: var(--accent); border-color: var(--accent); text-decoration: none; }
+    .view-role:hover { color: #07151b; background: var(--accent-strong); }
+    details.breakdown { margin-top: 13px; color: var(--faint); font-size: .76rem; }
+    details.breakdown summary { cursor: pointer; width: max-content; }
+    .breakdown-grid { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .breakdown-grid span { padding: 3px 7px; border: 1px solid var(--border); border-radius: 7px; }
+    .empty { padding: 56px 24px; border: 1px dashed var(--border-strong); border-radius: var(--radius); text-align: center; color: var(--muted); }
+    .methodology, .source-health {
+      margin-top: 24px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 14px; background: rgba(255,255,255,.025);
+    }
+    .methodology summary, .source-health summary { cursor: pointer; font-weight: 760; }
+    .methodology p, .source-health p { color: var(--muted); }
+    .source-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .source-pill { padding: 6px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: .75rem; }
+    .source-pill.ok::before { content: "●"; margin-right: 6px; color: var(--success); }
+    .source-pill.failed::before { content: "●"; margin-right: 6px; color: var(--danger); }
+    footer { margin-top: 34px; color: var(--faint); font-size: .76rem; text-align: center; }
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .toolbar { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .control.search { grid-column: 1 / -1; }
+    }
+    @media (max-width: 650px) {
+      .page-shell { width: min(100% - 20px, 1280px); }
+      .hero { padding-top: 34px; }
+      .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: 1fr; }
+      .control.search, .toolbar-row { grid-column: 1; }
+      .toolbar-row { align-items: flex-start; flex-direction: column; }
+      .job-card { grid-template-columns: 1fr; }
+      .score-column { display: flex; align-items: baseline; gap: 7px; padding: 11px 18px; border-right: 0; border-bottom: 1px solid var(--border); text-align: left; }
+      .score-number { font-size: 1.3rem; }
+      .score-tier { margin: 0 0 0 auto; }
+      .job-body { padding: 18px 16px 16px; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .job-top { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="eyebrow">Candidate-specific daily search</div>
+      <h1>Michael&#x27;s Daily Job Fits</h1>
+      <p class="hero-copy">A ranked shortlist across software, AI applications, developer support, QA, technical writing, data, and research-software roles. Scores are transparent triage signals—not claims about hiring probability.</p>
+      <div class="hero-meta">
+        <span>Updated <strong id="updated-at">2026-08-08T10:37:15.205290Z</strong></span>
+        <span>Salary floor <strong id="salary-floor"></strong></span>
+        <span>Scope <strong id="search-scope"></strong></span>
+      </div>
+    </header>
+    <div class="demo-banner"><strong>Demonstration data:</strong> run <code>python -m jobfit run</code> or trigger the GitHub workflow to replace these examples with live jobs.</div>
+    <section class="stats-grid" aria-label="Digest summary">
+      <div class="stat"><div class="stat-value" id="stat-shown">0</div><div class="stat-label">ranked jobs</div></div>
+      <div class="stat"><div class="stat-value" id="stat-new">0</div><div class="stat-label">new today</div></div>
+      <div class="stat"><div class="stat-value" id="stat-high">0</div><div class="stat-label">70+ score</div></div>
+      <div class="stat"><div class="stat-value" id="stat-remote">0</div><div class="stat-label">remote</div></div>
+      <div class="stat"><div class="stat-value" id="stat-salary">0</div><div class="stat-label">salary listed</div></div>
+    </section>
+
+    <section class="toolbar" aria-label="Job filters">
+      <div class="control search">
+        <label for="search">Search results</label>
+        <input id="search" type="search" placeholder="Title, company, skill, location…" autocomplete="off">
+      </div>
+      <div class="control">
+        <label for="family">Role family</label>
+        <select id="family"><option value="all">All role families</option></select>
+      </div>
+      <div class="control">
+        <label for="status-filter">Review status</label>
+        <select id="status-filter">
+          <option value="active">Active (hide hidden)</option>
+          <option value="all">All</option>
+          <option value="unreviewed">Unreviewed</option>
+          <option value="saved">Saved</option>
+          <option value="applied">Applied</option>
+          <option value="hidden">Hidden</option>
+        </select>
+      </div>
+      <div class="control">
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="score">Best fit</option>
+          <option value="newest">Newest posting</option>
+          <option value="salary">Highest published salary</option>
+          <option value="company">Company</option>
+        </select>
+      </div>
+      <div class="toolbar-row">
+        <div class="score-control">
+          <label for="min-score">Minimum score</label>
+          <input id="min-score" type="range" min="0" max="95" step="1">
+          <span class="score-readout" id="score-readout"></span>
+        </div>
+        <label class="check"><input id="new-only" type="checkbox"> New only</label>
+        <label class="check"><input id="remote-only" type="checkbox"> Remote only</label>
+        <label class="check"><input id="salary-only" type="checkbox"> Salary listed</label>
+        <button class="toolbar-button" id="export-feedback" type="button">Export review data</button>
+      </div>
+    </section>
+
+    <div class="results-bar">
+      <span><strong id="visible-count">0</strong> roles shown</span>
+      <span id="review-counts"></span>
+    </div>
+    <main id="job-list" class="job-list"></main>
+
+    <details class="methodology">
+      <summary>How the fit score works</summary>
+      <p>The 0–100 score combines role-family alignment, explicit skill overlap, résumé-language similarity, salary, location eligibility, freshness, employment type, and seniority. It subtracts points for likely blockers such as an active clearance requirement, management duties, advanced-degree requirements, excessive experience, or senior leadership titles. A role with a published salary ceiling below the configured floor, an explicit non-U.S. restriction, an expired posting, or a disallowed employment type is removed before ranking.</p>
+      <p>Unknown salary or location does not automatically eliminate a promising role; it appears as a concern so you can decide. Adjust the rules in <code>config/profile.json</code>. Saved, applied, and hidden states live only in this browser unless you export them.</p>
+    </details>
+
+    <details class="source-health">
+      <summary>Source health and pipeline coverage</summary>
+      <div class="source-pills" id="source-pills"></div>
+      <p id="pipeline-summary"></p>
+    </details>
+
+    <footer>
+      Open-source, deterministic ranking. Job details can change after collection; verify salary, eligibility, and requirements on the original posting before applying.
+    </footer>
+  </div>
+
+  <script id="job-data" type="application/json">{"schema_version":1,"generated_at":"2026-08-08T10:37:15.205290Z","demo":true,"candidate":{"name":"Michael Crombie","dashboard_title":"Michael's Daily Job Fits","home_location":"Fairfax Station, Virginia","search_scope":"United States nationwide","minimum_salary_usd":75000,"dashboard_min_score":42},"families":[{"id":"backend-ai","label":"Backend / AI Applications"},{"id":"fullstack-frontend","label":"Full-stack / Frontend"},{"id":"developer-support-solutions","label":"Developer Support / Solutions"},{"id":"qa-automation","label":"QA / Test Automation"},{"id":"technical-writing","label":"Technical Writing / Documentation"},{"id":"data-analytics","label":"Data / Analytics"},{"id":"research-software","label":"Research Software / Digital Humanities"}],"jobs":[{"id":"3f09e0b8eb6be96dec38c7a2","key":"205af5c744d5bdcf550154ed","score":100.0,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Software Engineer II, AI Applications","company":"ArchiveWorks","location":"Remote — United States","url":"https://example.com/jobs/archiveworks-ai","description":"Build source-grounded AI applications in Python and FastAPI. Develop retrieval-augmented generation pipelines using hybrid retrieval, embeddings, vector search, evaluation harnesses, PostgreSQL, REST APIs, and React interfaces. Collaborate with historians, librarians, and product partners to translate complex research workflows into reliable software. Candidates should have 3 or more years of professional software experience and strong testing habits with pytest.","posted_at":"2026-08-07T10:37:15.205290Z","posted_label":"Posted yesterday","expires_at":"2026-09-01T10:37:15.205290Z","employment_type":"Full-time","remote":true,"salary":"$92,000–$125,000 / year","salary_known":true,"salary_minimum_usd":92000,"salary_maximum_usd":125000,"family_id":"backend-ai","family_label":"Backend / AI Applications","reasons":["Title aligns with Backend / AI Applications","Matches LLM Applications, RAG, Python, React, Hybrid Retrieval","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Remote and explicitly open to U.S. applicants","Posted within the last day"],"concerns":[],"skills":["LLM Applications","RAG","Python","React","Hybrid Retrieval","FastAPI","Embeddings","Testing"],"breakdown":{"role":30.0,"skills":20.0,"profile_similarity":14.0,"salary":10.0,"location":9.0,"freshness":8.0,"employment":5.0,"seniority":9.0,"risk":0.0,"feedback":0.0},"source":"Greenhouse","source_url":"https://example.com/jobs/archiveworks-ai","attribution_text":"Employer job board powered by Greenhouse","attribution_url":"https://www.greenhouse.com/"},{"id":"d00939635546c76cf1b877dd","key":"6274fc65961693af7778739c","score":93.3,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Full-Stack Engineer","company":"Mapcraft Systems","location":"Remote, US","url":"https://example.com/jobs/mapcraft-fullstack","description":"Build a TypeScript and React geospatial authoring application backed by Python services and REST APIs. Work with Next.js, Vite, state management, automated testing, SQL, deployment, and product design. We value self-directed engineers who can own features from requirements through release. Four years of relevant experience preferred, including substantial project work.","posted_at":"2026-08-03T10:37:15.205290Z","posted_label":"Posted 5 days ago","expires_at":null,"employment_type":"Full-time","remote":true,"salary":"$88,000–$120,000 / year","salary_known":true,"salary_minimum_usd":88000,"salary_maximum_usd":120000,"family_id":"fullstack-frontend","family_label":"Full-stack / Frontend","reasons":["Title aligns with Full-stack / Frontend","Matches Python, TypeScript, React, Testing, SQL","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Remote and explicitly open to U.S. applicants","Posted within the last week"],"concerns":[],"skills":["Python","TypeScript","React","Testing","SQL","REST APIs","Next.js","Deployment"],"breakdown":{"role":26.880000000000003,"skills":17.5,"profile_similarity":12.902533068498972,"salary":10.0,"location":9.0,"freshness":6.0,"employment":5.0,"seniority":6.0,"risk":0.0,"feedback":0.0},"source":"Greenhouse","source_url":"https://example.com/jobs/mapcraft-fullstack","attribution_text":"Employer job board powered by Greenhouse","attribution_url":"https://www.greenhouse.com/"},{"id":"fb5848e24780c005485a4793","key":"e6ab67cde8f5c1fcc73d958f","score":92.0,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Solutions Engineer","company":"Signal Foundry","location":"Washington, DC — Hybrid","url":"https://example.com/jobs/signal-foundry-solutions","description":"Help customers integrate a data and AI platform through REST APIs, Python, JavaScript, technical discovery, implementation planning, troubleshooting, documentation, and product feedback. Translate between client domain experts and engineering teams. Three years of software development, support engineering, or implementation experience is preferred.","posted_at":"2026-08-07T10:37:15.205290Z","posted_label":"Posted yesterday","expires_at":null,"employment_type":"Full-time","remote":false,"salary":"$95,000–$130,000 / year","salary_known":true,"salary_minimum_usd":95000,"salary_maximum_usd":130000,"family_id":"developer-support-solutions","family_label":"Developer Support / Solutions","reasons":["Title aligns with Developer Support / Solutions","Matches Python, Technical Writing, JavaScript, REST APIs, Customer Communication","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Located in Northern Virginia / the Washington region","Posted within the last day"],"concerns":[],"skills":["Python","Technical Writing","JavaScript","REST APIs","Customer Communication"],"breakdown":{"role":28.672000000000004,"skills":10.5,"profile_similarity":13.8323560236085,"salary":10.0,"location":10.0,"freshness":8.0,"employment":5.0,"seniority":6.0,"risk":0.0,"feedback":0.0},"source":"Himalayas","source_url":"https://example.com/jobs/signal-foundry-solutions","attribution_text":"Jobs sourced through Himalayas","attribution_url":"https://himalayas.app/jobs"},{"id":"010b77ff2856348db1a2c1f4","key":"4bd4d261440dcf2bef95782d","score":90.5,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Documentation Engineer, Developer Platform","company":"API Lantern","location":"Remote — Worldwide","url":"https://example.com/jobs/api-lantern-docs","description":"Own developer documentation for a public API platform. Write tutorials, API references, architecture explanations, and release notes; build docs-as-code tooling in TypeScript and Python; test code examples; interview engineers and customers; and improve developer experience through research and clear source-grounded explanations. Two years of software or technical writing experience preferred.","posted_at":"2026-08-06T10:37:15.205290Z","posted_label":"Posted 2 days ago","expires_at":null,"employment_type":"Full-time","remote":true,"salary":"$85,000–$115,000 / year","salary_known":true,"salary_minimum_usd":85000,"salary_maximum_usd":115000,"family_id":"technical-writing","family_label":"Technical Writing / Documentation","reasons":["Title aligns with Technical Writing / Documentation","Matches Technical Writing, Python, TypeScript, Research","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Remote with worldwide eligibility","Posted within the last three days"],"concerns":[],"skills":["Technical Writing","Python","TypeScript","Research"],"breakdown":{"role":28.672000000000004,"skills":10.867499999999998,"profile_similarity":14.0,"salary":10.0,"location":9.0,"freshness":7.0,"employment":5.0,"seniority":6.0,"risk":0.0,"feedback":0.0},"source":"Lever","source_url":"https://example.com/jobs/api-lantern-docs","attribution_text":"Employer job board powered by Lever","attribution_url":"https://www.lever.co/"},{"id":"ffeae67bb5671def3605f463","key":"44fee23f34927a03e7667219","score":90.5,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"QA Automation Engineer","company":"Common Ground Health","location":"Reston, Virginia","url":"https://example.com/jobs/common-ground-qa","description":"Create API and user-interface test automation for healthcare applications. Use Python, pytest, JavaScript, SQL, GitHub Actions, regression testing, and exploratory QA. Work closely with developers and non-technical healthcare specialists to reproduce defects and translate requirements into reliable test plans. Requires 2 years of software testing or development experience.","posted_at":"2026-08-05T10:37:15.205290Z","posted_label":"Posted 3 days ago","expires_at":null,"employment_type":"Full-time","remote":false,"salary":"$82,000–$104,000 / year","salary_known":true,"salary_minimum_usd":82000,"salary_maximum_usd":104000,"family_id":"qa-automation","family_label":"QA / Test Automation","reasons":["Title aligns with QA / Test Automation","Matches Python, Testing, JavaScript, SQL, Git","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Located in Northern Virginia / the Washington region","Posted within the last three days"],"concerns":[],"skills":["Python","Testing","JavaScript","SQL","Git"],"breakdown":{"role":26.880000000000003,"skills":9.799999999999999,"profile_similarity":13.776233525699235,"salary":10.0,"location":10.0,"freshness":7.0,"employment":5.0,"seniority":8.0,"risk":0.0,"feedback":0.0},"source":"Remotive","source_url":"https://example.com/jobs/common-ground-qa","attribution_text":"Jobs sourced through Remotive","attribution_url":"https://remotive.com/remote-jobs"},{"id":"df42fc57213e8a7d39ba9c27","key":"7d7add2ca8338ff6b2841157","score":83.9,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Research Software Engineer","company":"Jefferson Digital Laboratory","location":"Charlottesville, Virginia","url":"https://example.com/jobs/jefferson-digital-rse","description":"Develop Python tools for digital humanities research, archival metadata, semantic search, document processing, data analysis, and public scholarly interfaces. Partner with historians and librarians, maintain tested research software, and document methods for non-specialist users. A bachelor's degree and 2 years of relevant programming experience are required.","posted_at":"2026-08-04T10:37:15.205290Z","posted_label":"Posted 4 days ago","expires_at":null,"employment_type":"Full-time","remote":false,"salary":"$78,000–$92,000 / year","salary_known":true,"salary_minimum_usd":78000,"salary_maximum_usd":92000,"family_id":"research-software","family_label":"Research Software / Digital Humanities","reasons":["Title aligns with Research Software / Digital Humanities","Matches Research, Python, Embeddings, Data Analysis, Git","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Located in or open across the United States","Posted within the last week"],"concerns":[],"skills":["Research","Python","Embeddings","Data Analysis","Git"],"breakdown":{"role":29.268000000000004,"skills":10.762500000000001,"profile_similarity":9.856370051085818,"salary":10.0,"location":5.0,"freshness":6.0,"employment":5.0,"seniority":8.0,"risk":0.0,"feedback":0.0},"source":"USAJOBS","source_url":"https://example.com/jobs/jefferson-digital-rse","attribution_text":"Federal jobs sourced through USAJOBS","attribution_url":"https://www.usajobs.gov/"},{"id":"74fb924396c45a741dd62091","key":"58660696270cc76836d2b4d8","score":76.0,"is_new":true,"first_seen":"2026-08-08T10:37:15.205290Z","title":"Data Analyst","company":"Civic Metrics","location":"Arlington, Virginia","url":"https://example.com/jobs/civic-metrics-data","description":"Analyze product and public-sector datasets with Python, SQL, Excel, reporting, experimentation, and data visualization. Explain findings to stakeholders and improve recommendation and campaign performance. Requires 2 years of analytics, feeds, marketing data, or software experience.","posted_at":"2026-08-02T10:37:15.205290Z","posted_label":"Posted 6 days ago","expires_at":null,"employment_type":"Full-time","remote":false,"salary":"$76,000–$96,000 / year","salary_known":true,"salary_minimum_usd":76000,"salary_maximum_usd":96000,"family_id":"data-analytics","family_label":"Data / Analytics","reasons":["Title aligns with Data / Analytics","Matches Python, SQL, Data Analysis","Overall language is close to your résumé and project profile","Published pay starts at or above your $75,000 floor","Located in Northern Virginia / the Washington region","Posted within the last week"],"concerns":[],"skills":["Python","SQL","Data Analysis"],"breakdown":{"role":24.576,"skills":5.95,"profile_similarity":8.427280471436367,"salary":10.0,"location":10.0,"freshness":6.0,"employment":5.0,"seniority":6.0,"risk":0.0,"feedback":0.0},"source":"Arbeitnow","source_url":"https://example.com/jobs/civic-metrics-data","attribution_text":"Jobs sourced through Arbeitnow","attribution_url":"https://www.arbeitnow.com/"}],"statistics":{"shown":7,"new":7,"remote":3,"salary_known":7,"high_confidence":7},"pipeline":{"fetched":12,"eligible":8,"rejected":4,"below_threshold":1,"deduplicated":12,"truncated":0},"sources":[{"source":"Arbeitnow","ok":true,"fetched":2,"kept":1,"message":"demo fixture"},{"source":"Greenhouse","ok":true,"fetched":3,"kept":2,"message":"demo fixture"},{"source":"Himalayas","ok":true,"fetched":2,"kept":1,"message":"demo fixture"},{"source":"Lever","ok":true,"fetched":2,"kept":2,"message":"demo fixture"},{"source":"Remotive","ok":true,"fetched":2,"kept":1,"message":"demo fixture"},{"source":"USAJOBS","ok":true,"fetched":1,"kept":1,"message":"demo fixture"}]}</script>
+  <script>
+    "use strict";
+    const payload = JSON.parse(document.getElementById("job-data").textContent);
+    const storageKey = "job-fit-daily-review-v1";
+    const controlKey = "job-fit-daily-controls-v1";
+    let review = loadJSON(storageKey, {});
+    let controls = loadJSON(controlKey, {});
+
+    const $ = (id) => document.getElementById(id);
+    const esc = (value) => String(value ?? "")
+      .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+    const safeURL = (value) => {
+      try {
+        const url = new URL(String(value));
+        return (url.protocol === "https:" || url.protocol === "http:") ? url.href : "#";
+      } catch { return "#"; }
+    };
+    function loadJSON(key, fallback) {
+      try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+      catch { return fallback; }
+    }
+    function saveReview() {
+      try { localStorage.setItem(storageKey, JSON.stringify(review)); } catch { /* Direct-file previews can have opaque storage origins. */ }
+    }
+    function saveControls() {
+      controls = {
+        search: $("search").value,
+        family: $("family").value,
+        status: $("status-filter").value,
+        sort: $("sort").value,
+        minScore: Number($("min-score").value),
+        newOnly: $("new-only").checked,
+        remoteOnly: $("remote-only").checked,
+        salaryOnly: $("salary-only").checked,
+      };
+      try { localStorage.setItem(controlKey, JSON.stringify(controls)); } catch { /* Keep the dashboard usable without persistent browser storage. */ }
+    }
+    function statusFor(job) { return review[job.key]?.status || "unreviewed"; }
+    function setStatus(jobKey, status) {
+      if (status === "unreviewed") delete review[jobKey];
+      else review[jobKey] = { status, updatedAt: new Date().toISOString() };
+      saveReview(); render();
+    }
+    function currency(value) {
+      return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value || 0);
+    }
+    function dateSortValue(value) { return value ? Date.parse(value) || 0 : 0; }
+    function scoreTier(score) {
+      if (score >= 70) return ["high", "strong"];
+      if (score >= 55) return ["good", "good"];
+      return ["possible", "possible"];
+    }
+    function statusBadge(status) {
+      if (status === "unreviewed") return "";
+      const label = status.charAt(0).toUpperCase() + status.slice(1);
+      return `<span class="badge status">${esc(label)}</span>`;
+    }
+    function fitList(items, emptyText) {
+      const values = items?.length ? items : [emptyText];
+      return values.map((item) => `<li>${esc(item)}</li>`).join("");
+    }
+    function card(job) {
+      const status = statusFor(job);
+      const [tierClass, tierText] = scoreTier(job.score);
+      const badges = [
+        job.is_new ? '<span class="badge new">New</span>' : "",
+        `<span class="badge family">${esc(job.family_label)}</span>`,
+        statusBadge(status),
+      ].join("");
+      const skills = (job.skills || []).slice(0, 8).map((skill) => `<span class="skill">${esc(skill)}</span>`).join("");
+      const breakdown = Object.entries(job.breakdown || {})
+        .filter(([, value]) => Math.abs(Number(value)) >= .01)
+        .sort((a, b) => Number(b[1]) - Number(a[1]))
+        .map(([name, value]) => `<span>${esc(name.replaceAll("_", " "))}: ${Number(value) >= 0 ? "+" : ""}${Number(value).toFixed(1)}</span>`)
+        .join("");
+      return `<article class="job-card" data-status="${esc(status)}">
+        <div class="score-column">
+          <div class="score-number">${Number(job.score).toFixed(0)}</div>
+          <div class="score-label">fit score</div>
+          <div class="score-tier ${tierClass}">${tierText}</div>
+        </div>
+        <div class="job-body">
+          <div class="job-top">
+            <div class="title-wrap">
+              <div class="badges">${badges}</div>
+              <h2 class="job-title"><a href="${safeURL(job.url)}" target="_blank" rel="noopener noreferrer">${esc(job.title)}</a></h2>
+              <div class="company">${esc(job.company)}</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span>⌖ ${esc(job.location)}</span>
+            <span>◷ ${esc(job.posted_label)}</span>
+            <span>▣ ${esc(job.employment_type)}</span>
+            <span>＄ ${esc(job.salary)}</span>
+          </div>
+          ${job.description ? `<p class="description">${esc(job.description)}</p>` : ""}
+          <div class="fit-grid">
+            <section class="fit-box"><h3>Why it fits</h3><ul>${fitList(job.reasons, "No strong positive explanation was generated.")}</ul></section>
+            <section class="fit-box concerns"><h3>Check before applying</h3><ul>${fitList(job.concerns, "No major concerns detected from the posting text.")}</ul></section>
+          </div>
+          ${skills ? `<div class="skills">${skills}</div>` : ""}
+          <details class="breakdown"><summary>Score breakdown</summary><div class="breakdown-grid">${breakdown}</div></details>
+          <div class="job-footer">
+            <div class="source"><a href="${safeURL(job.attribution_url)}" target="_blank" rel="noopener noreferrer">${esc(job.attribution_text)}</a></div>
+            <div class="actions">
+              <button type="button" class="action saved ${status === "saved" ? "active" : ""}" data-action="saved" data-key="${esc(job.key)}">Save</button>
+              <button type="button" class="action applied ${status === "applied" ? "active" : ""}" data-action="applied" data-key="${esc(job.key)}">Applied</button>
+              <button type="button" class="action hide ${status === "hidden" ? "active" : ""}" data-action="hidden" data-key="${esc(job.key)}">Hide</button>
+              ${status !== "unreviewed" ? `<button type="button" class="action" data-action="unreviewed" data-key="${esc(job.key)}">Clear</button>` : ""}
+              <a class="action view-role" href="${safeURL(job.url)}" target="_blank" rel="noopener noreferrer">View role ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>`;
+    }
+
+    function filteredJobs() {
+      const query = $("search").value.trim().toLowerCase();
+      const terms = query.split(/\s+/).filter(Boolean);
+      const family = $("family").value;
+      const statusFilter = $("status-filter").value;
+      const minScore = Number($("min-score").value);
+      let jobs = payload.jobs.filter((job) => {
+        const status = statusFor(job);
+        if (job.score < minScore) return false;
+        if (family !== "all" && job.family_id !== family) return false;
+        if (statusFilter === "active" && status === "hidden") return false;
+        if (!["active", "all"].includes(statusFilter) && status !== statusFilter) return false;
+        if ($("new-only").checked && !job.is_new) return false;
+        if ($("remote-only").checked && !job.remote) return false;
+        if ($("salary-only").checked && !job.salary_known) return false;
+        if (terms.length) {
+          const haystack = [job.title, job.company, job.location, job.family_label, job.description, ...(job.skills || [])].join(" ").toLowerCase();
+          if (!terms.every((term) => haystack.includes(term))) return false;
+        }
+        return true;
+      });
+      const sort = $("sort").value;
+      jobs.sort((a, b) => {
+        if (sort === "newest") return dateSortValue(b.posted_at) - dateSortValue(a.posted_at) || b.score - a.score;
+        if (sort === "salary") return (b.salary_maximum_usd || b.salary_minimum_usd || 0) - (a.salary_maximum_usd || a.salary_minimum_usd || 0) || b.score - a.score;
+        if (sort === "company") return a.company.localeCompare(b.company) || b.score - a.score;
+        return b.score - a.score || dateSortValue(b.posted_at) - dateSortValue(a.posted_at);
+      });
+      return jobs;
+    }
+
+    function render() {
+      saveControls();
+      $("score-readout").textContent = $("min-score").value;
+      const jobs = filteredJobs();
+      $("visible-count").textContent = jobs.length;
+      $("job-list").innerHTML = jobs.length
+        ? jobs.map(card).join("")
+        : '<div class="empty"><strong>No jobs match these filters.</strong><br>Lower the score threshold or clear one of the filters.</div>';
+      const counts = { saved: 0, applied: 0, hidden: 0 };
+      for (const job of payload.jobs) {
+        const status = statusFor(job);
+        if (counts[status] !== undefined) counts[status] += 1;
+      }
+      $("review-counts").textContent = `${counts.saved} saved · ${counts.applied} applied · ${counts.hidden} hidden`;
+    }
+
+    function initialize() {
+      $("updated-at").textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeStyle: "short" }).format(new Date(payload.generated_at));
+      $("salary-floor").textContent = currency(payload.candidate.minimum_salary_usd);
+      $("search-scope").textContent = payload.candidate.search_scope;
+      $("stat-shown").textContent = payload.statistics.shown;
+      $("stat-new").textContent = payload.statistics.new;
+      $("stat-high").textContent = payload.statistics.high_confidence;
+      $("stat-remote").textContent = payload.statistics.remote;
+      $("stat-salary").textContent = payload.statistics.salary_known;
+      for (const family of payload.families) {
+        const option = document.createElement("option");
+        option.value = family.id; option.textContent = family.label; $("family").append(option);
+      }
+      $("search").value = controls.search || "";
+      $("family").value = controls.family || "all";
+      $("status-filter").value = controls.status || "active";
+      $("sort").value = controls.sort || "score";
+      $("min-score").value = Number.isFinite(controls.minScore) ? controls.minScore : payload.candidate.dashboard_min_score;
+      $("new-only").checked = Boolean(controls.newOnly);
+      $("remote-only").checked = Boolean(controls.remoteOnly);
+      $("salary-only").checked = Boolean(controls.salaryOnly);
+
+      const sourceHTML = payload.sources.map((source) => {
+        const status = source.ok ? "ok" : "failed";
+        const counts = `${source.fetched} fetched${source.kept ? `, ${source.kept} eligible` : ""}`;
+        const detail = source.ok
+          ? ((source.message && source.fetched === 0) ? source.message : `${counts}${source.message ? ` · ${source.message}` : ""}`)
+          : (source.message || "failed");
+        return `<span class="source-pill ${status}" title="${esc(detail)}">${esc(source.source)}: ${esc(detail)}</span>`;
+      }).join("");
+      $("source-pills").innerHTML = sourceHTML;
+      const p = payload.pipeline;
+      const truncated = p.truncated ? `; ${p.truncated} additional qualifying roles were omitted by the display cap` : "";
+      $("pipeline-summary").textContent = `${p.fetched} source records collected; ${p.eligible} remained after hard filters; ${p.below_threshold} scored below the dashboard threshold; ${p.rejected} were rejected${truncated}.`;
+
+      ["search", "family", "status-filter", "sort", "min-score", "new-only", "remote-only", "salary-only"].forEach((id) => {
+        $(id).addEventListener(id === "search" || id === "min-score" ? "input" : "change", render);
+      });
+      $("job-list").addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-action]");
+        if (!button) return;
+        const action = button.dataset.action;
+        const key = button.dataset.key;
+        const current = review[key]?.status || "unreviewed";
+        setStatus(key, current === action ? "unreviewed" : action);
+      });
+      $("export-feedback").addEventListener("click", () => {
+        const jobsByKey = Object.fromEntries(payload.jobs.map((job) => [job.key, { title: job.title, company: job.company, url: job.url }]));
+        const exported = {
+          schema_version: 1,
+          exported_at: new Date().toISOString(),
+          review,
+          jobs: Object.fromEntries(Object.keys(review).map((key) => [key, jobsByKey[key] || null])),
+        };
+        const blob = new Blob([JSON.stringify(exported, null, 2)], { type: "application/json" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `job-fit-review-${new Date().toISOString().slice(0, 10)}.json`;
+        document.body.append(link); link.click(); link.remove(); URL.revokeObjectURL(link.href);
+      });
+      render();
+    }
+    initialize();
+  </script>
+</body>
+</html>

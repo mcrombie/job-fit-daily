@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-08T10:37:15.205290Z",
+  "demo": true,
+  "candidate": {
+    "name": "Michael Crombie",
+    "dashboard_title": "Michael's Daily Job Fits",
+    "home_location": "Fairfax Station, Virginia",
+    "search_scope": "United States nationwide",
+    "minimum_salary_usd": 75000,
+    "dashboard_min_score": 42
+  },
+  "families": [
+    {
+      "id": "backend-ai",
+      "label": "Backend / AI Applications"
+    },
+    {
+      "id": "fullstack-frontend",
+      "label": "Full-stack / Frontend"
+    },
+    {
+      "id": "developer-support-solutions",
+      "label": "Developer Support / Solutions"
+    },
+    {
+      "id": "qa-automation",
+      "label": "QA / Test Automation"
+    },
+    {
+      "id": "technical-writing",
+      "label": "Technical Writing / Documentation"
+    },
+    {
+      "id": "data-analytics",
+      "label": "Data / Analytics"
+    },
+    {
+      "id": "research-software",
+      "label": "Research Software / Digital Humanities"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "3f09e0b8eb6be96dec38c7a2",
+      "key": "205af5c744d5bdcf550154ed",
+      "score": 100.0,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Software Engineer II, AI Applications",
+      "company": "ArchiveWorks",
+      "location": "Remote — United States",
+      "url": "https://example.com/jobs/archiveworks-ai",
+      "description": "Build source-grounded AI applications in Python and FastAPI. Develop retrieval-augmented generation pipelines using hybrid retrieval, embeddings, vector search, evaluation harnesses, PostgreSQL, REST APIs, and React interfaces. Collaborate with historians, librarians, and product partners to translate complex research workflows into reliable software. Candidates should have 3 or more years of professional software experience and strong testing habits with pytest.",
+      "posted_at": "2026-08-07T10:37:15.205290Z",
+      "posted_label": "Posted yesterday",
+      "expires_at": "2026-09-01T10:37:15.205290Z",
+      "employment_type": "Full-time",
+      "remote": true,
+      "salary": "$92,000–$125,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 92000,
+      "salary_maximum_usd": 125000,
+      "family_id": "backend-ai",
+      "family_label": "Backend / AI Applications",
+      "reasons": [
+        "Title aligns with Backend / AI Applications",
+        "Matches LLM Applications, RAG, Python, React, Hybrid Retrieval",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Remote and explicitly open to U.S. applicants",
+        "Posted within the last day"
+      ],
+      "concerns": [],
+      "skills": [
+        "LLM Applications",
+        "RAG",
+        "Python",
+        "React",
+        "Hybrid Retrieval",
+        "FastAPI",
+        "Embeddings",
+        "Testing"
+      ],
+      "breakdown": {
+        "role": 30.0,
+        "skills": 20.0,
+        "profile_similarity": 14.0,
+        "salary": 10.0,
+        "location": 9.0,
+        "freshness": 8.0,
+        "employment": 5.0,
+        "seniority": 9.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Greenhouse",
+      "source_url": "https://example.com/jobs/archiveworks-ai",
+      "attribution_text": "Employer job board powered by Greenhouse",
+      "attribution_url": "https://www.greenhouse.com/"
+    },
+    {
+      "id": "d00939635546c76cf1b877dd",
+      "key": "6274fc65961693af7778739c",
+      "score": 93.3,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Full-Stack Engineer",
+      "company": "Mapcraft Systems",
+      "location": "Remote, US",
+      "url": "https://example.com/jobs/mapcraft-fullstack",
+      "description": "Build a TypeScript and React geospatial authoring application backed by Python services and REST APIs. Work with Next.js, Vite, state management, automated testing, SQL, deployment, and product design. We value self-directed engineers who can own features from requirements through release. Four years of relevant experience preferred, including substantial project work.",
+      "posted_at": "2026-08-03T10:37:15.205290Z",
+      "posted_label": "Posted 5 days ago",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": true,
+      "salary": "$88,000–$120,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 88000,
+      "salary_maximum_usd": 120000,
+      "family_id": "fullstack-frontend",
+      "family_label": "Full-stack / Frontend",
+      "reasons": [
+        "Title aligns with Full-stack / Frontend",
+        "Matches Python, TypeScript, React, Testing, SQL",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Remote and explicitly open to U.S. applicants",
+        "Posted within the last week"
+      ],
+      "concerns": [],
+      "skills": [
+        "Python",
+        "TypeScript",
+        "React",
+        "Testing",
+        "SQL",
+        "REST APIs",
+        "Next.js",
+        "Deployment"
+      ],
+      "breakdown": {
+        "role": 26.880000000000003,
+        "skills": 17.5,
+        "profile_similarity": 12.902533068498972,
+        "salary": 10.0,
+        "location": 9.0,
+        "freshness": 6.0,
+        "employment": 5.0,
+        "seniority": 6.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Greenhouse",
+      "source_url": "https://example.com/jobs/mapcraft-fullstack",
+      "attribution_text": "Employer job board powered by Greenhouse",
+      "attribution_url": "https://www.greenhouse.com/"
+    },
+    {
+      "id": "fb5848e24780c005485a4793",
+      "key": "e6ab67cde8f5c1fcc73d958f",
+      "score": 92.0,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Solutions Engineer",
+      "company": "Signal Foundry",
+      "location": "Washington, DC — Hybrid",
+      "url": "https://example.com/jobs/signal-foundry-solutions",
+      "description": "Help customers integrate a data and AI platform through REST APIs, Python, JavaScript, technical discovery, implementation planning, troubleshooting, documentation, and product feedback. Translate between client domain experts and engineering teams. Three years of software development, support engineering, or implementation experience is preferred.",
+      "posted_at": "2026-08-07T10:37:15.205290Z",
+      "posted_label": "Posted yesterday",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": false,
+      "salary": "$95,000–$130,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 95000,
+      "salary_maximum_usd": 130000,
+      "family_id": "developer-support-solutions",
+      "family_label": "Developer Support / Solutions",
+      "reasons": [
+        "Title aligns with Developer Support / Solutions",
+        "Matches Python, Technical Writing, JavaScript, REST APIs, Customer Communication",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Located in Northern Virginia / the Washington region",
+        "Posted within the last day"
+      ],
+      "concerns": [],
+      "skills": [
+        "Python",
+        "Technical Writing",
+        "JavaScript",
+        "REST APIs",
+        "Customer Communication"
+      ],
+      "breakdown": {
+        "role": 28.672000000000004,
+        "skills": 10.5,
+        "profile_similarity": 13.8323560236085,
+        "salary": 10.0,
+        "location": 10.0,
+        "freshness": 8.0,
+        "employment": 5.0,
+        "seniority": 6.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Himalayas",
+      "source_url": "https://example.com/jobs/signal-foundry-solutions",
+      "attribution_text": "Jobs sourced through Himalayas",
+      "attribution_url": "https://himalayas.app/jobs"
+    },
+    {
+      "id": "010b77ff2856348db1a2c1f4",
+      "key": "4bd4d261440dcf2bef95782d",
+      "score": 90.5,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Documentation Engineer, Developer Platform",
+      "company": "API Lantern",
+      "location": "Remote — Worldwide",
+      "url": "https://example.com/jobs/api-lantern-docs",
+      "description": "Own developer documentation for a public API platform. Write tutorials, API references, architecture explanations, and release notes; build docs-as-code tooling in TypeScript and Python; test code examples; interview engineers and customers; and improve developer experience through research and clear source-grounded explanations. Two years of software or technical writing experience preferred.",
+      "posted_at": "2026-08-06T10:37:15.205290Z",
+      "posted_label": "Posted 2 days ago",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": true,
+      "salary": "$85,000–$115,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 85000,
+      "salary_maximum_usd": 115000,
+      "family_id": "technical-writing",
+      "family_label": "Technical Writing / Documentation",
+      "reasons": [
+        "Title aligns with Technical Writing / Documentation",
+        "Matches Technical Writing, Python, TypeScript, Research",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Remote with worldwide eligibility",
+        "Posted within the last three days"
+      ],
+      "concerns": [],
+      "skills": [
+        "Technical Writing",
+        "Python",
+        "TypeScript",
+        "Research"
+      ],
+      "breakdown": {
+        "role": 28.672000000000004,
+        "skills": 10.867499999999998,
+        "profile_similarity": 14.0,
+        "salary": 10.0,
+        "location": 9.0,
+        "freshness": 7.0,
+        "employment": 5.0,
+        "seniority": 6.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Lever",
+      "source_url": "https://example.com/jobs/api-lantern-docs",
+      "attribution_text": "Employer job board powered by Lever",
+      "attribution_url": "https://www.lever.co/"
+    },
+    {
+      "id": "ffeae67bb5671def3605f463",
+      "key": "44fee23f34927a03e7667219",
+      "score": 90.5,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "QA Automation Engineer",
+      "company": "Common Ground Health",
+      "location": "Reston, Virginia",
+      "url": "https://example.com/jobs/common-ground-qa",
+      "description": "Create API and user-interface test automation for healthcare applications. Use Python, pytest, JavaScript, SQL, GitHub Actions, regression testing, and exploratory QA. Work closely with developers and non-technical healthcare specialists to reproduce defects and translate requirements into reliable test plans. Requires 2 years of software testing or development experience.",
+      "posted_at": "2026-08-05T10:37:15.205290Z",
+      "posted_label": "Posted 3 days ago",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": false,
+      "salary": "$82,000–$104,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 82000,
+      "salary_maximum_usd": 104000,
+      "family_id": "qa-automation",
+      "family_label": "QA / Test Automation",
+      "reasons": [
+        "Title aligns with QA / Test Automation",
+        "Matches Python, Testing, JavaScript, SQL, Git",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Located in Northern Virginia / the Washington region",
+        "Posted within the last three days"
+      ],
+      "concerns": [],
+      "skills": [
+        "Python",
+        "Testing",
+        "JavaScript",
+        "SQL",
+        "Git"
+      ],
+      "breakdown": {
+        "role": 26.880000000000003,
+        "skills": 9.799999999999999,
+        "profile_similarity": 13.776233525699235,
+        "salary": 10.0,
+        "location": 10.0,
+        "freshness": 7.0,
+        "employment": 5.0,
+        "seniority": 8.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Remotive",
+      "source_url": "https://example.com/jobs/common-ground-qa",
+      "attribution_text": "Jobs sourced through Remotive",
+      "attribution_url": "https://remotive.com/remote-jobs"
+    },
+    {
+      "id": "df42fc57213e8a7d39ba9c27",
+      "key": "7d7add2ca8338ff6b2841157",
+      "score": 83.9,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Research Software Engineer",
+      "company": "Jefferson Digital Laboratory",
+      "location": "Charlottesville, Virginia",
+      "url": "https://example.com/jobs/jefferson-digital-rse",
+      "description": "Develop Python tools for digital humanities research, archival metadata, semantic search, document processing, data analysis, and public scholarly interfaces. Partner with historians and librarians, maintain tested research software, and document methods for non-specialist users. A bachelor's degree and 2 years of relevant programming experience are required.",
+      "posted_at": "2026-08-04T10:37:15.205290Z",
+      "posted_label": "Posted 4 days ago",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": false,
+      "salary": "$78,000–$92,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 78000,
+      "salary_maximum_usd": 92000,
+      "family_id": "research-software",
+      "family_label": "Research Software / Digital Humanities",
+      "reasons": [
+        "Title aligns with Research Software / Digital Humanities",
+        "Matches Research, Python, Embeddings, Data Analysis, Git",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Located in or open across the United States",
+        "Posted within the last week"
+      ],
+      "concerns": [],
+      "skills": [
+        "Research",
+        "Python",
+        "Embeddings",
+        "Data Analysis",
+        "Git"
+      ],
+      "breakdown": {
+        "role": 29.268000000000004,
+        "skills": 10.762500000000001,
+        "profile_similarity": 9.856370051085818,
+        "salary": 10.0,
+        "location": 5.0,
+        "freshness": 6.0,
+        "employment": 5.0,
+        "seniority": 8.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "USAJOBS",
+      "source_url": "https://example.com/jobs/jefferson-digital-rse",
+      "attribution_text": "Federal jobs sourced through USAJOBS",
+      "attribution_url": "https://www.usajobs.gov/"
+    },
+    {
+      "id": "74fb924396c45a741dd62091",
+      "key": "58660696270cc76836d2b4d8",
+      "score": 76.0,
+      "is_new": true,
+      "first_seen": "2026-08-08T10:37:15.205290Z",
+      "title": "Data Analyst",
+      "company": "Civic Metrics",
+      "location": "Arlington, Virginia",
+      "url": "https://example.com/jobs/civic-metrics-data",
+      "description": "Analyze product and public-sector datasets with Python, SQL, Excel, reporting, experimentation, and data visualization. Explain findings to stakeholders and improve recommendation and campaign performance. Requires 2 years of analytics, feeds, marketing data, or software experience.",
+      "posted_at": "2026-08-02T10:37:15.205290Z",
+      "posted_label": "Posted 6 days ago",
+      "expires_at": null,
+      "employment_type": "Full-time",
+      "remote": false,
+      "salary": "$76,000–$96,000 / year",
+      "salary_known": true,
+      "salary_minimum_usd": 76000,
+      "salary_maximum_usd": 96000,
+      "family_id": "data-analytics",
+      "family_label": "Data / Analytics",
+      "reasons": [
+        "Title aligns with Data / Analytics",
+        "Matches Python, SQL, Data Analysis",
+        "Overall language is close to your résumé and project profile",
+        "Published pay starts at or above your $75,000 floor",
+        "Located in Northern Virginia / the Washington region",
+        "Posted within the last week"
+      ],
+      "concerns": [],
+      "skills": [
+        "Python",
+        "SQL",
+        "Data Analysis"
+      ],
+      "breakdown": {
+        "role": 24.576,
+        "skills": 5.95,
+        "profile_similarity": 8.427280471436367,
+        "salary": 10.0,
+        "location": 10.0,
+        "freshness": 6.0,
+        "employment": 5.0,
+        "seniority": 6.0,
+        "risk": 0.0,
+        "feedback": 0.0
+      },
+      "source": "Arbeitnow",
+      "source_url": "https://example.com/jobs/civic-metrics-data",
+      "attribution_text": "Jobs sourced through Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com/"
+    }
+  ],
+  "statistics": {
+    "shown": 7,
+    "new": 7,
+    "remote": 3,
+    "salary_known": 7,
+    "high_confidence": 7
+  },
+  "pipeline": {
+    "fetched": 12,
+    "eligible": 8,
+    "rejected": 4,
+    "below_threshold": 1,
+    "deduplicated": 12,
+    "truncated": 0
+  },
+  "sources": [
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 2,
+      "kept": 1,
+      "message": "demo fixture"
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 3,
+      "kept": 2,
+      "message": "demo fixture"
+    },
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 2,
+      "kept": 1,
+      "message": "demo fixture"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 2,
+      "kept": 2,
+      "message": "demo fixture"
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 2,
+      "kept": 1,
+      "message": "demo fixture"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 1,
+      "kept": 1,
+      "message": "demo fixture"
+    }
+  ]
+}

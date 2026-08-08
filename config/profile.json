@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "candidate": {
+    "name": "Michael Crombie",
+    "dashboard_title": "Michael's Daily Job Fits",
+    "home_location": "Fairfax Station, Virginia",
+    "search_scope": "United States nationwide",
+    "minimum_salary_usd": 75000,
+    "lookback_days": 30,
+    "dashboard_min_score": 42,
+    "email_min_score": 58,
+    "max_dashboard_results": 50,
+    "max_email_results": 12,
+    "full_time_preferred": true,
+    "allow_contract": true,
+    "summary": "Software engineer with two years of production React Native development and current hands-on work building deployed Python and TypeScript systems. Recent projects include a public source-grounded RAG application using FastAPI, React, ChromaDB, hybrid retrieval, evaluation, observability, privacy boundaries, and API cost controls; a Python civilization simulation; and an Electron/React map-authoring application. Also an experienced long-form researcher, published author, and technical blogger who translates complex systems for non-specialists.",
+    "strengths": [
+      "building practical Python and TypeScript applications",
+      "retrieval-augmented generation and LLM application engineering",
+      "React, React Native, Next.js, and frontend product work",
+      "requirements translation and communication with non-technical domain experts",
+      "technical writing, documentation, research, and source-grounded explanation",
+      "QA, testing, debugging, and evaluation",
+      "self-directed ownership of long-running projects",
+      "shipping public software through Render, Vercel, and Cloudflare"
+    ]
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "aliases": [
+        "python"
+      ],
+      "weight": 1.5
+    },
+    {
+      "name": "TypeScript",
+      "aliases": [
+        "typescript",
+        "type script"
+      ],
+      "weight": 1.4
+    },
+    {
+      "name": "JavaScript",
+      "aliases": [
+        "javascript",
+        "java script"
+      ],
+      "weight": 1.1
+    },
+    {
+      "name": "React",
+      "aliases": [
+        "react",
+        "react.js",
+        "reactjs"
+      ],
+      "weight": 1.3
+    },
+    {
+      "name": "React Native",
+      "aliases": [
+        "react native"
+      ],
+      "weight": 1.4
+    },
+    {
+      "name": "Next.js",
+      "aliases": [
+        "next.js",
+        "nextjs"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "FastAPI",
+      "aliases": [
+        "fastapi",
+        "fast api"
+      ],
+      "weight": 1.3
+    },
+    {
+      "name": "SQL",
+      "aliases": [
+        "sql",
+        "postgresql",
+        "postgres",
+        "mysql"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "REST APIs",
+      "aliases": [
+        "rest api",
+        "restful",
+        "api development",
+        "apis"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "RAG",
+      "aliases": [
+        "retrieval augmented generation",
+        "retrieval-augmented generation",
+        "rag"
+      ],
+      "weight": 1.6
+    },
+    {
+      "name": "LLM Applications",
+      "aliases": [
+        "llm",
+        "large language model",
+        "generative ai",
+        "genai",
+        "ai application"
+      ],
+      "weight": 1.4
+    },
+    {
+      "name": "OpenAI API",
+      "aliases": [
+        "openai api",
+        "openai"
+      ],
+      "weight": 1.1
+    },
+    {
+      "name": "Embeddings",
+      "aliases": [
+        "embedding",
+        "embeddings",
+        "vector search",
+        "semantic search"
+      ],
+      "weight": 1.3
+    },
+    {
+      "name": "ChromaDB",
+      "aliases": [
+        "chromadb",
+        "chroma"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Hybrid Retrieval",
+      "aliases": [
+        "hybrid retrieval",
+        "bm25",
+        "dense retrieval",
+        "sparse retrieval"
+      ],
+      "weight": 1.3
+    },
+    {
+      "name": "Testing",
+      "aliases": [
+        "pytest",
+        "vitest",
+        "unit testing",
+        "automated testing",
+        "test automation"
+      ],
+      "weight": 1.2
+    },
+    {
+      "name": "Git",
+      "aliases": [
+        "git",
+        "github"
+      ],
+      "weight": 0.8
+    },
+    {
+      "name": "Electron",
+      "aliases": [
+        "electron"
+      ],
+      "weight": 0.8
+    },
+    {
+      "name": "Vite",
+      "aliases": [
+        "vite"
+      ],
+      "weight": 0.7
+    },
+    {
+      "name": "Tailwind CSS",
+      "aliases": [
+        "tailwind",
+        "tailwind css"
+      ],
+      "weight": 0.6
+    },
+    {
+      "name": "Data Analysis",
+      "aliases": [
+        "data analysis",
+        "analytics",
+        "excel",
+        "adobe target",
+        "product recommendations"
+      ],
+      "weight": 0.9
+    },
+    {
+      "name": "Technical Writing",
+      "aliases": [
+        "technical writing",
+        "documentation",
+        "developer documentation",
+        "docs as code",
+        "api documentation"
+      ],
+      "weight": 1.4
+    },
+    {
+      "name": "Research",
+      "aliases": [
+        "research",
+        "digital humanities",
+        "historical research",
+        "source analysis"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Customer Communication",
+      "aliases": [
+        "customer-facing",
+        "client-facing",
+        "stakeholder communication",
+        "requirements gathering",
+        "implementation"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "Deployment",
+      "aliases": [
+        "render",
+        "vercel",
+        "cloudflare",
+        "deployment",
+        "ci/cd",
+        "continuous integration"
+      ],
+      "weight": 0.9
+    }
+  ],
+  "role_families": [
+    {
+      "id": "backend-ai",
+      "label": "Backend / AI Applications",
+      "weight": 1.18,
+      "title_terms": [
+        "backend engineer",
+        "backend developer",
+        "python developer",
+        "python engineer",
+        "software engineer",
+        "application engineer",
+        "ai engineer",
+        "applied ai",
+        "llm engineer",
+        "generative ai engineer",
+        "rag engineer",
+        "platform engineer"
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "api",
+        "backend",
+        "rag",
+        "retrieval",
+        "llm",
+        "embeddings",
+        "vector search",
+        "generative ai",
+        "postgres",
+        "sql",
+        "testing"
+      ]
+    },
+    {
+      "id": "fullstack-frontend",
+      "label": "Full-stack / Frontend",
+      "weight": 1.05,
+      "title_terms": [
+        "full stack engineer",
+        "full-stack engineer",
+        "frontend engineer",
+        "front end engineer",
+        "react developer",
+        "javascript developer",
+        "typescript developer",
+        "software engineer"
+      ],
+      "keywords": [
+        "typescript",
+        "javascript",
+        "react",
+        "react native",
+        "next.js",
+        "frontend",
+        "full stack",
+        "api",
+        "vite",
+        "testing"
+      ]
+    },
+    {
+      "id": "developer-support-solutions",
+      "label": "Developer Support / Solutions",
+      "weight": 1.12,
+      "title_terms": [
+        "solutions engineer",
+        "implementation engineer",
+        "support engineer",
+        "developer support",
+        "technical support engineer",
+        "customer engineer",
+        "technical account manager",
+        "sales engineer",
+        "integration engineer",
+        "developer advocate"
+      ],
+      "keywords": [
+        "customer-facing",
+        "client-facing",
+        "api",
+        "integration",
+        "troubleshooting",
+        "implementation",
+        "technical communication",
+        "python",
+        "javascript",
+        "documentation"
+      ]
+    },
+    {
+      "id": "qa-automation",
+      "label": "QA / Test Automation",
+      "weight": 1.05,
+      "title_terms": [
+        "qa engineer",
+        "quality assurance engineer",
+        "test engineer",
+        "automation engineer",
+        "software development engineer in test",
+        "sdet",
+        "qa analyst"
+      ],
+      "keywords": [
+        "test automation",
+        "automated testing",
+        "pytest",
+        "vitest",
+        "quality assurance",
+        "debugging",
+        "regression",
+        "api testing",
+        "python",
+        "javascript"
+      ]
+    },
+    {
+      "id": "technical-writing",
+      "label": "Technical Writing / Documentation",
+      "weight": 1.12,
+      "title_terms": [
+        "technical writer",
+        "documentation engineer",
+        "developer documentation",
+        "documentation specialist",
+        "content engineer",
+        "api writer",
+        "developer education"
+      ],
+      "keywords": [
+        "technical writing",
+        "documentation",
+        "api documentation",
+        "docs as code",
+        "developer experience",
+        "research",
+        "editing",
+        "software",
+        "python",
+        "javascript"
+      ]
+    },
+    {
+      "id": "data-analytics",
+      "label": "Data / Analytics",
+      "weight": 0.96,
+      "title_terms": [
+        "data analyst",
+        "product analyst",
+        "business intelligence analyst",
+        "analytics engineer",
+        "research analyst",
+        "technical analyst",
+        "systems analyst"
+      ],
+      "keywords": [
+        "python",
+        "sql",
+        "data analysis",
+        "analytics",
+        "excel",
+        "experimentation",
+        "reporting",
+        "product recommendations"
+      ]
+    },
+    {
+      "id": "research-software",
+      "label": "Research Software / Digital Humanities",
+      "weight": 1.08,
+      "title_terms": [
+        "research software engineer",
+        "digital humanities",
+        "research programmer",
+        "research technologist",
+        "library technologist",
+        "digital scholarship",
+        "knowledge engineer",
+        "information architect"
+      ],
+      "keywords": [
+        "python",
+        "research",
+        "archives",
+        "library",
+        "humanities",
+        "knowledge",
+        "retrieval",
+        "search",
+        "metadata",
+        "data",
+        "documentation"
+      ]
+    }
+  ],
+  "seniority": {
+    "preferred_title_terms": [
+      "associate",
+      "junior",
+      "entry level",
+      "entry-level",
+      "early career",
+      "software engineer i",
+      "software engineer ii",
+      "engineer 1",
+      "engineer 2",
+      "mid-level"
+    ],
+    "title_penalties": {
+      "senior": 7,
+      "sr.": 7,
+      "staff": 18,
+      "principal": 22,
+      "lead": 12,
+      "manager": 14,
+      "director": 22,
+      "head of": 24,
+      "architect": 14,
+      "distinguished": 30,
+      "vice president": 30,
+      "vp ": 30
+    },
+    "maximum_preferred_required_years": 5
+  },
+  "locations": {
+    "local_bonus_terms": [
+      "fairfax",
+      "reston",
+      "herndon",
+      "tysons",
+      "mclean",
+      "arlington",
+      "alexandria",
+      "washington, dc",
+      "washington dc",
+      "northern virginia",
+      "nova",
+      "chantilly",
+      "manassas",
+      "loudoun",
+      "prince william",
+      "bethesda",
+      "rockville",
+      "silver spring"
+    ],
+    "us_terms": [
+      "united states",
+      "usa",
+      "u.s.",
+      "us only",
+      "remote - us",
+      "remote, us",
+      "nationwide",
+      "washington, dc",
+      "virginia",
+      "maryland",
+      "california",
+      "new york",
+      "texas",
+      "florida",
+      "colorado",
+      "massachusetts",
+      "illinois",
+      "pennsylvania",
+      "north carolina",
+      "georgia",
+      "oregon",
+      "washington state"
+    ],
+    "outside_us_only_terms": [
+      "europe only",
+      "eu only",
+      "uk only",
+      "united kingdom only",
+      "canada only",
+      "germany only",
+      "india only",
+      "australia only",
+      "emea only",
+      "apac only",
+      "latin america only",
+      "philippines only"
+    ],
+    "remote_terms": [
+      "remote",
+      "work from home",
+      "distributed"
+    ]
+  },
+  "hard_filters": {
+    "reject_part_time": true,
+    "reject_internships": true,
+    "reject_volunteer": true,
+    "reject_salary_ceiling_below_floor": true,
+    "reject_explicit_non_us_only": true
+  },
+  "risk_terms": [
+    {
+      "label": "Active security clearance required",
+      "terms": [
+        "active ts/sci",
+        "active top secret",
+        "current security clearance",
+        "must possess a security clearance",
+        "active secret clearance"
+      ],
+      "penalty": 20
+    },
+    {
+      "label": "Substantial people-management duty",
+      "terms": [
+        "manage a team",
+        "direct reports",
+        "people manager",
+        "lead a team of engineers"
+      ],
+      "penalty": 12
+    },
+    {
+      "label": "Advanced degree required",
+      "terms": [
+        "phd required",
+        "doctorate required",
+        "master's degree required",
+        "masters degree required"
+      ],
+      "penalty": 8
+    },
+    {
+      "label": "Heavy travel requirement",
+      "terms": [
+        "50% travel",
+        "75% travel",
+        "extensive travel"
+      ],
+      "penalty": 8
+    }
+  ],
+  "feedback": {
+    "boost_companies": [],
+    "block_companies": [],
+    "boost_terms": [],
+    "block_terms": []
+  }
+}

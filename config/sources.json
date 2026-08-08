@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "http": {
+    "timeout_seconds": 30,
+    "retries": 3,
+    "user_agent": "job-fit-daily/1.0 (+https://github.com/mcrombie/job-fit-daily)"
+  },
+  "himalayas": {
+    "enabled": true,
+    "max_pages": 8,
+    "page_size": 20
+  },
+  "remotive": {
+    "enabled": true,
+    "limit": 1000
+  },
+  "arbeitnow": {
+    "enabled": true,
+    "max_pages": 5
+  },
+  "greenhouse": {
+    "enabled": true,
+    "boards": []
+  },
+  "lever": {
+    "enabled": true,
+    "sites": []
+  },
+  "usajobs": {
+    "enabled": false,
+    "location": "United States",
+    "date_posted_days": 30,
+    "results_per_page": 100,
+    "keywords": [
+      "software engineer",
+      "python developer",
+      "technical writer",
+      "systems analyst",
+      "data analyst"
+    ]
+  },
+  "notifications": {
+    "email_enabled": true,
+    "send_when_no_new_matches": true
+  },
+  "output": {
+    "data_directory": "data",
+    "site_directory": "site",
+    "history_days": 45
+  }
+}
