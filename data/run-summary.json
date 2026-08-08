@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-08T13:11:33.508176Z",
+  "demo": false,
+  "fetched": 758,
+  "deduplicated": 714,
+  "eligible": 558,
+  "rejected": 156,
+  "above_threshold": 96,
+  "shown": 50,
+  "truncated": 46,
+  "new_shown": 50,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 67,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 23,
+      "kept": 14,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 575,
+      "kept": 477,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 87.5,
+      "title": "Full Stack Frontend Engineer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/remote-full-stack-frontend-engineer-199554"
+    },
+    {
+      "score": 82.1,
+      "title": "Senior Backend Developer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/senior-backend-developer-berlin-466521"
+    },
+    {
+      "score": 82.0,
+      "title": "Full-Stack Engineer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/full-stack-engineer-munich-368853"
+    },
+    {
+      "score": 79.8,
+      "title": "Senior Software Engineer (SDK)",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/senior-software-engineer-sdk-berlin-17798"
+    },
+    {
+      "score": 78.8,
+      "title": "Customer Engineer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/customer-engineer-berlin-160559"
+    },
+    {
+      "score": 78.3,
+      "title": "Software Engineer I",
+      "company": "Sonyinteractiveentertainmentglobal",
+      "url": "https://www.arbeitnow.com/jobs/companies/sonyinteractiveentertainmentglobal/software-engineer-i-berlin-393990"
+    },
+    {
+      "score": 76.8,
+      "title": "AI/LLM Engineer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/ai-llm-engineer-munich-395370"
+    },
+    {
+      "score": 74.8,
+      "title": "Software Engineer - Operations",
+      "company": "onrunning",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/onrunning/software-engineer-operations-london-235372"
+    },
+    {
+      "score": 73.0,
+      "title": "Senior Frontend Engineer",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/senior-frontend-engineer-berlin-29540"
+    },
+    {
+      "score": 72.9,
+      "title": "Full-Stack Engineer (Founding Team)",
+      "company": "Clera",
+      "url": "https://www.arbeitnow.com/jobs/companies/clera/full-stack-engineer-founding-team-munich-319861"
+    }
+  ],
+  "email_sent": false,
+  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+}
