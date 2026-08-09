@@ -115,7 +115,5 @@
       "company": "Clera",
       "url": "https://www.arbeitnow.com/jobs/companies/clera/software-engineer-infrastructure-berlin-209952"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
