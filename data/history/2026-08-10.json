@@ -115,7 +115,5 @@
       "company": "Clera",
       "url": "https://www.arbeitnow.com/jobs/companies/clera/senior-software-engineer-sdk-berlin-439381"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
