@@ -115,7 +115,5 @@
       "company": "Future Demand",
       "url": "https://www.arbeitnow.com/jobs/companies/future-demand/frontend-developer-berlin-341207"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
