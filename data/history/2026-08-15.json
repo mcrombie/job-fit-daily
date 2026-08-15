@@ -115,7 +115,5 @@
       "company": "adjoe",
       "url": "https://www.arbeitnow.com/jobs/companies/adjoe/senior-go-backend-developer-catalog-hamburg-104898"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
