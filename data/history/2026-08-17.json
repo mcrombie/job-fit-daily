@@ -115,7 +115,5 @@
       "company": "Baldwin Risk Partners, LLC",
       "url": "https://himalayas.app/companies/baldwin-risk-partners-llc/jobs/senior-business-intelligence-analyst-msi"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
