@@ -115,7 +115,5 @@
       "company": "Fanduel",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/fanduel/software-engineer-java-edinburgh-192814"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
