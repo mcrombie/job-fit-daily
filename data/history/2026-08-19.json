@@ -115,7 +115,5 @@
       "company": "CACI International Inc",
       "url": "https://himalayas.app/companies/caci-international-inc/jobs/test-engineer-analyst"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
