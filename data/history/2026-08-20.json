@@ -115,7 +115,5 @@
       "company": "Zahln",
       "url": "https://www.arbeitnow.com/jobs/companies/zahln/backend-engineer-founding-team-augsburg-263526"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
