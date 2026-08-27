@@ -115,7 +115,5 @@
       "company": "Kraken",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/kraken/senior-software-engineer-agent-safety-evals-ai-foundations-london-245251"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
