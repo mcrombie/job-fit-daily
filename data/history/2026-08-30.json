@@ -115,7 +115,5 @@
       "company": "Lemon.io",
       "url": "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
