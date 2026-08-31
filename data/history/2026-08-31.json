@@ -115,7 +115,5 @@
       "company": "Arvig",
       "url": "https://himalayas.app/companies/arvig/jobs/business-intelligence-analyst-az-fl-ia-mn-mt-nd-sd-tx-ut-wa-only"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
