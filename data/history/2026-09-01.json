@@ -115,7 +115,5 @@
       "company": "Pleo",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/pleo/analytics-engineer-london-210438"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
