@@ -115,7 +115,5 @@
       "company": "Quantum",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/quantum/senior-full-stack-engineer-london-456643"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
