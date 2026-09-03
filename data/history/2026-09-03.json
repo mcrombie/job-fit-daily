@@ -115,7 +115,5 @@
       "company": "gitlab",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/gitlab/remote-intermediate-backend-engineer-emea-147388"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
