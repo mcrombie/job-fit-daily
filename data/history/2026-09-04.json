@@ -115,7 +115,5 @@
       "company": "Arvana",
       "url": "https://www.arbeitnow.com/jobs/companies/arvana/software-engineer-berlin-459963"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
