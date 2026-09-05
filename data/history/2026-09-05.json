@@ -115,7 +115,5 @@
       "company": "Dedale Intelligence",
       "url": "https://www.arbeitnow.fr/jobs/companies/dedale-intelligence/senior-software-engineer-paris-139544"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
