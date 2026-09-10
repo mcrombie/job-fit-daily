@@ -115,7 +115,5 @@
       "company": "Dynatron Software",
       "url": "https://himalayas.app/companies/dynatron-software/jobs/lead-applied-ai-ml-data-scientist"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
