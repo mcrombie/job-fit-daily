@@ -115,7 +115,5 @@
       "company": "Openai",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/openai/applied-ai-engineer-codex-london-19305"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
