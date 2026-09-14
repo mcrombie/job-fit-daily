@@ -115,7 +115,5 @@
       "company": "capco",
       "url": "https://www.arbeitnow.fr/jobs/companies/capco/senior-python-agentic-ai-engineer-h-f-296364"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
