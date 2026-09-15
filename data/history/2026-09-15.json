@@ -115,7 +115,5 @@
       "company": "Metabase",
       "url": "https://himalayas.app/companies/metabase/jobs/developer-advocate-3145628312"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
