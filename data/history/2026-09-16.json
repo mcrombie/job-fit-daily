@@ -115,7 +115,5 @@
       "company": "Strike",
       "url": "https://himalayas.app/companies/strikeusa/jobs/staff-ai-platform-engineer-7601466790"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
