@@ -115,7 +115,5 @@
       "company": "eleQtron GmbH",
       "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-333060"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
