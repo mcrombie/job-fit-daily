@@ -115,7 +115,5 @@
       "company": "cresta",
       "url": "https://www.arbeitnow.com/jobs/companies/cresta/software-engineer-in-test-berlin-488239"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
