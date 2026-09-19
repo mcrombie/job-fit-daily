@@ -115,7 +115,5 @@
       "company": "bunch",
       "url": "https://www.arbeitnow.com/jobs/companies/bunch/senior-full-stack-engineer-frontend-leaning-platform-team-berlin-362893"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
