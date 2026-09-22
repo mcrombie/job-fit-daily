@@ -115,7 +115,5 @@
       "company": "Mistral.ai",
       "url": "https://www.arbeitnow.com/jobs/companies/mistralai/applied-ai-forward-deployed-machine-learning-engineer-munich-28234"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
