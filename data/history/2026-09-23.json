@@ -115,7 +115,5 @@
       "company": "Tolken",
       "url": "https://himalayas.app/companies/tolken/jobs/senior-full-stack-engineer"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
