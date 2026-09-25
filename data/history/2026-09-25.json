@@ -115,7 +115,5 @@
       "company": "Taxfix",
       "url": "https://www.arbeitnow.com/jobs/companies/taxfix/senior-software-engineer-berlin-333938"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
