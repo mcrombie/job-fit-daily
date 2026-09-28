@@ -115,7 +115,5 @@
       "company": "Placer.ai",
       "url": "https://himalayas.app/companies/placer-ai/jobs/senior-ai-software-engineer"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
