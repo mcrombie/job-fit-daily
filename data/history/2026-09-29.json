@@ -115,7 +115,5 @@
       "company": "Hercules",
       "url": "https://himalayas.app/companies/hercules/jobs/technical-customer-support-engineer-8191167354"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
