@@ -115,7 +115,5 @@
       "company": "Roku",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/roku/senior-software-engineer-agentic-ai-cambridge-421481"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
