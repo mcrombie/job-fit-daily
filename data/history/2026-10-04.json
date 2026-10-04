@@ -115,7 +115,5 @@
       "company": "Openai",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/openai/dedicated-support-engineer-london-363290"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
