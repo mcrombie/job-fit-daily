@@ -115,7 +115,5 @@
       "company": "Hcompany",
       "url": "https://www.arbeitnow.fr/jobs/companies/hcompany/senior-software-engineer-paris-346059"
     }
-  ],
-  "email_sent": false,
-  "email_message": "Email skipped; missing SMTP_HOST, SMTP_FROM, DIGEST_TO"
+  ]
 }
