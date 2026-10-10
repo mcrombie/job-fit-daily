@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T18:20:45.166214Z",
+  "generated_at": "2026-10-10T17:20:22.416431Z",
   "demo": false,
-  "fetched": 1127,
-  "deduplicated": 1063,
-  "eligible": 798,
+  "fetched": 1128,
+  "deduplicated": 1045,
+  "eligible": 780,
   "rejected": 265,
-  "above_threshold": 161,
+  "above_threshold": 125,
   "shown": 50,
-  "truncated": 111,
+  "truncated": 75,
   "new_shown": 17,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 78,
+      "kept": 52,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
-      "fetched": 17,
+      "fetched": 18,
       "kept": 12,
       "message": ""
     },
@@ -29,7 +29,7 @@
       "source": "Arbeitnow",
       "ok": true,
       "fetched": 950,
-      "kept": 708,
+      "kept": 716,
       "message": ""
     },
     {
@@ -56,64 +56,64 @@
   ],
   "top_jobs": [
     {
-      "score": 82.8,
-      "title": "Forward Deployed AI Engineer",
-      "company": "Techtorch",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/techtorch/forward-deployed-ai-engineer-eu-uk-193609"
+      "score": 80.9,
+      "title": "AI Engineer (m/f/d)",
+      "company": "Pentadoc Gruppe",
+      "url": "https://www.arbeitnow.com/jobs/companies/pentadoc-gruppe/ai-engineer-wurzburg-256911"
     },
     {
-      "score": 79.9,
+      "score": 80.0,
       "title": "Software Engineer / AI Code Trainer (Python, Web, Full Stack)",
       "company": "CodeForAI",
       "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-code-trainer-python-web-full-stack-2091149"
     },
     {
-      "score": 78.5,
+      "score": 78.7,
+      "title": "AI Engineer (Agentic)",
+      "company": "Coreweaveu",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/ai-engineer-agentic-london-473164"
+    },
+    {
+      "score": 77.3,
       "title": "Full Stack Engineer (m/f/d)",
       "company": "Glassdollar",
       "url": "https://www.arbeitnow.com/jobs/companies/glassdollar/full-stack-engineer-berlin-337900"
     },
     {
-      "score": 76.2,
-      "title": "Technical Solutions Engineer",
-      "company": "Talos Trading",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/talos-trading/technical-solutions-engineer-london-279861"
+      "score": 77.2,
+      "title": "Full-Stack Engineer (Frontend)",
+      "company": "Algo1",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/algo1/full-stack-engineer-frontend-london-122942"
     },
     {
-      "score": 75.8,
-      "title": "Backend Engineer - Mission Operations Services",
-      "company": "Loftorbital",
-      "url": "https://www.arbeitnow.fr/jobs/companies/loftorbital/backend-engineer-mission-operations-services-toulouse-occitanie-204677"
+      "score": 77.1,
+      "title": "Applied AI Engineer, Digital Natives",
+      "company": "Openai",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/openai/applied-ai-engineer-digital-natives-london-442353"
     },
     {
-      "score": 73.5,
+      "score": 75.7,
       "title": "Senior AI Engineer",
       "company": "Pentadoc Gruppe",
       "url": "https://www.arbeitnow.com/jobs/companies/pentadoc-gruppe/senior-ai-engineer-wurzburg-487731"
     },
     {
-      "score": 73.3,
-      "title": "AI Engineer, Trading Ops & Management",
-      "company": "Crypto.com",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cryptocom/ai-engineer-trading-ops-management-london-317724"
+      "score": 75.7,
+      "title": "Software Engineer Backend / KI (m/w/d) - verhandlungssicheres Deutsch erforderlich",
+      "company": "Intrafind Software Ag",
+      "url": "https://www.arbeitnow.com/jobs/companies/intrafind-software-ag/software-engineer-backend-ki-verhandlungssicheres-deutsch-erforderlich-munchen-154998"
     },
     {
-      "score": 72.8,
-      "title": "Applied AI, Forward Deployed Machine Learning Engineer - London",
-      "company": "Mistral.ai",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/mistralai/applied-ai-forward-deployed-machine-learning-engineer-london-493270"
+      "score": 75.4,
+      "title": "Support Engineer",
+      "company": "Zuma",
+      "url": "https://himalayas.app/companies/zuma/jobs/support-engineer"
     },
     {
-      "score": 72.7,
-      "title": "QA Engineer",
-      "company": "Npv",
-      "url": "https://www.arbeitnow.fr/jobs/companies/npv/qa-engineer-paris-107303"
-    },
-    {
-      "score": 71.8,
-      "title": "Applied AI Engineer",
-      "company": "ElevenLabs",
-      "url": "https://www.arbeitnow.ch/jobs/companies/elevenlabs/remote-applied-ai-engineer-404690"
+      "score": 74.8,
+      "title": "Backend Engineer - Mission Operations Services",
+      "company": "Loftorbital",
+      "url": "https://www.arbeitnow.fr/jobs/companies/loftorbital/backend-engineer-mission-operations-services-toulouse-occitanie-204677"
     }
   ],
   "email_sent": false,

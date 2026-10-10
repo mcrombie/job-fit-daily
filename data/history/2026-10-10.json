@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-10T17:20:22.416431Z",
+  "demo": false,
+  "fetched": 1128,
+  "deduplicated": 1045,
+  "eligible": 780,
+  "rejected": 265,
+  "above_threshold": 125,
+  "shown": 50,
+  "truncated": 75,
+  "new_shown": 17,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 52,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 18,
+      "kept": 12,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 950,
+      "kept": 716,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 80.9,
+      "title": "AI Engineer (m/f/d)",
+      "company": "Pentadoc Gruppe",
+      "url": "https://www.arbeitnow.com/jobs/companies/pentadoc-gruppe/ai-engineer-wurzburg-256911"
+    },
+    {
+      "score": 80.0,
+      "title": "Software Engineer / AI Code Trainer (Python, Web, Full Stack)",
+      "company": "CodeForAI",
+      "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-code-trainer-python-web-full-stack-2091149"
+    },
+    {
+      "score": 78.7,
+      "title": "AI Engineer (Agentic)",
+      "company": "Coreweaveu",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/ai-engineer-agentic-london-473164"
+    },
+    {
+      "score": 77.3,
+      "title": "Full Stack Engineer (m/f/d)",
+      "company": "Glassdollar",
+      "url": "https://www.arbeitnow.com/jobs/companies/glassdollar/full-stack-engineer-berlin-337900"
+    },
+    {
+      "score": 77.2,
+      "title": "Full-Stack Engineer (Frontend)",
+      "company": "Algo1",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/algo1/full-stack-engineer-frontend-london-122942"
+    },
+    {
+      "score": 77.1,
+      "title": "Applied AI Engineer, Digital Natives",
+      "company": "Openai",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/openai/applied-ai-engineer-digital-natives-london-442353"
+    },
+    {
+      "score": 75.7,
+      "title": "Senior AI Engineer",
+      "company": "Pentadoc Gruppe",
+      "url": "https://www.arbeitnow.com/jobs/companies/pentadoc-gruppe/senior-ai-engineer-wurzburg-487731"
+    },
+    {
+      "score": 75.7,
+      "title": "Software Engineer Backend / KI (m/w/d) - verhandlungssicheres Deutsch erforderlich",
+      "company": "Intrafind Software Ag",
+      "url": "https://www.arbeitnow.com/jobs/companies/intrafind-software-ag/software-engineer-backend-ki-verhandlungssicheres-deutsch-erforderlich-munchen-154998"
+    },
+    {
+      "score": 75.4,
+      "title": "Support Engineer",
+      "company": "Zuma",
+      "url": "https://himalayas.app/companies/zuma/jobs/support-engineer"
+    },
+    {
+      "score": 74.8,
+      "title": "Backend Engineer - Mission Operations Services",
+      "company": "Loftorbital",
+      "url": "https://www.arbeitnow.fr/jobs/companies/loftorbital/backend-engineer-mission-operations-services-toulouse-occitanie-204677"
+    }
+  ]
+}
