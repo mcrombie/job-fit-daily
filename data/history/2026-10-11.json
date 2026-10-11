@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-11T17:40:59.955606Z",
+  "demo": false,
+  "fetched": 1128,
+  "deduplicated": 1072,
+  "eligible": 777,
+  "rejected": 295,
+  "above_threshold": 159,
+  "shown": 50,
+  "truncated": 109,
+  "new_shown": 25,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 83,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 18,
+      "kept": 12,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 950,
+      "kept": 682,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 87.6,
+      "title": "Solutions Engineer",
+      "company": "Sezzle",
+      "url": "https://himalayas.app/companies/sezzle/jobs/solutions-engineer"
+    },
+    {
+      "score": 80.0,
+      "title": "AI Engineer (m/f/d)",
+      "company": "Pentadoc Gruppe",
+      "url": "https://www.arbeitnow.com/jobs/companies/pentadoc-gruppe/ai-engineer-wurzburg-256911"
+    },
+    {
+      "score": 79.7,
+      "title": "Software Engineer / AI Code Trainer (Python, Web, Full Stack)",
+      "company": "CodeForAI",
+      "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-code-trainer-python-web-full-stack-2091149"
+    },
+    {
+      "score": 78.9,
+      "title": "Full Stack Engineer",
+      "company": "Xyz Reality",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/xyz-reality/full-stack-engineer-london-131242"
+    },
+    {
+      "score": 78.1,
+      "title": "Backend Engineer - Agentic AI (m/w/d)",
+      "company": "Getpress Gmbh",
+      "url": "https://www.arbeitnow.com/jobs/companies/getpress-gmbh/remote-backend-engineer-agentic-ai-berlin-376827"
+    },
+    {
+      "score": 75.8,
+      "title": "AI Platform Engineer (m/f/d)",
+      "company": "raisin",
+      "url": "https://www.arbeitnow.com/jobs/companies/raisin/ai-platform-engineer-berlin-berlin-91789"
+    },
+    {
+      "score": 75.5,
+      "title": "Full Stack Engineer",
+      "company": "Bluestorm Recruitment by Dazzle",
+      "url": "https://himalayas.app/companies/bluestorm-recruitment-by-dazzle/jobs/full-stack-engineer"
+    },
+    {
+      "score": 73.2,
+      "title": "Software Engineer",
+      "company": "Unmind",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/unmind/software-engineer-london-342570"
+    },
+    {
+      "score": 73.1,
+      "title": "Senior QA Engineer (All genders)",
+      "company": "Distribusion Technologies",
+      "url": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-senior-qa-engineer-all-genders-berlin-68172"
+    },
+    {
+      "score": 72.2,
+      "title": "Backend & Applied AI Engineer",
+      "company": "Resilience Care",
+      "url": "https://www.arbeitnow.fr/jobs/companies/resilience-care/backend-applied-ai-engineer-paris-478113"
+    }
+  ]
+}
