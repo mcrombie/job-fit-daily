@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-12T21:15:57.801367Z",
+  "demo": false,
+  "fetched": 1125,
+  "deduplicated": 1077,
+  "eligible": 779,
+  "rejected": 298,
+  "above_threshold": 151,
+  "shown": 50,
+  "truncated": 101,
+  "new_shown": 16,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 75,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 15,
+      "kept": 10,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 950,
+      "kept": 694,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 86.4,
+      "title": "Solutions Engineer",
+      "company": "Algolia",
+      "url": "https://himalayas.app/companies/algolia/jobs/solutions-engineer-2771966447"
+    },
+    {
+      "score": 84.7,
+      "title": "Sr Front End Engineer - 100% Remote - Nightshift - Up to 180k",
+      "company": "WeSource",
+      "url": "https://himalayas.app/companies/wesource/jobs/sr-front-end-engineer-100-remote-nightshift-up-to-180k"
+    },
+    {
+      "score": 77.8,
+      "title": "Software Engineer / AI Code Trainer (Python, Web, Full Stack)",
+      "company": "CodeForAI",
+      "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-code-trainer-python-web-full-stack-2091149"
+    },
+    {
+      "score": 76.7,
+      "title": "Test Engineering",
+      "company": "Valce Talent Solutions",
+      "url": "https://himalayas.app/companies/valce-talent-solutions/jobs/test-engineering"
+    },
+    {
+      "score": 75.5,
+      "title": "Backend Engineer (Python),AI Engineering: Agent Foundations",
+      "company": "gitlab",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/gitlab/remote-backend-engineer-pythonai-engineering-agent-foundations-499521"
+    },
+    {
+      "score": 75.0,
+      "title": "Full-Stack Software Engineer (m/f/d)",
+      "company": "TWAICE",
+      "url": "https://www.arbeitnow.com/jobs/companies/twaice/full-stack-software-engineer-munich-hybrid-420771"
+    },
+    {
+      "score": 72.5,
+      "title": "Senior AI Engineer (f/m/d)",
+      "company": "Alpas",
+      "url": "https://www.arbeitnow.com/jobs/companies/alpas/senior-ai-engineer-berlin-244282"
+    },
+    {
+      "score": 72.0,
+      "title": "Software Engineer (all genders)",
+      "company": "Raysono",
+      "url": "https://www.arbeitnow.com/jobs/companies/raysono/software-engineer-all-genders-munchen-464503"
+    },
+    {
+      "score": 71.5,
+      "title": "Junior Backend Developer - Future Position",
+      "company": "Talent Journey",
+      "url": "https://himalayas.app/companies/talent-journey/jobs/junior-backend-developer-future-position"
+    },
+    {
+      "score": 71.3,
+      "title": "Backend & Applied AI Engineer",
+      "company": "Resilience Care",
+      "url": "https://www.arbeitnow.fr/jobs/companies/resilience-care/backend-applied-ai-engineer-paris-478113"
+    }
+  ]
+}
