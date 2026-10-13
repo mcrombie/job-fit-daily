@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-12T21:15:57.801367Z",
+  "generated_at": "2026-10-13T19:16:18.884484Z",
   "demo": false,
-  "fetched": 1125,
-  "deduplicated": 1077,
-  "eligible": 779,
-  "rejected": 298,
-  "above_threshold": 151,
+  "fetched": 1618,
+  "deduplicated": 1555,
+  "eligible": 1198,
+  "rejected": 357,
+  "above_threshold": 245,
   "shown": 50,
-  "truncated": 101,
-  "new_shown": 16,
+  "truncated": 195,
+  "new_shown": 30,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 75,
+      "kept": 76,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
-      "fetched": 15,
-      "kept": 10,
+      "fetched": 16,
+      "kept": 11,
       "message": ""
     },
     {
       "source": "Arbeitnow",
       "ok": true,
-      "fetched": 950,
-      "kept": 694,
+      "fetched": 1442,
+      "kept": 1111,
       "message": ""
     },
     {
@@ -56,64 +56,64 @@
   ],
   "top_jobs": [
     {
-      "score": 86.4,
-      "title": "Solutions Engineer",
-      "company": "Algolia",
-      "url": "https://himalayas.app/companies/algolia/jobs/solutions-engineer-2771966447"
+      "score": 91.9,
+      "title": "Senior Software Engineer - SS&C EVOLV",
+      "company": "SS&C Technologies",
+      "url": "https://himalayas.app/companies/ss-c-technologies/jobs/senior-software-engineer-ss-c-evolv"
     },
     {
-      "score": 84.7,
-      "title": "Sr Front End Engineer - 100% Remote - Nightshift - Up to 180k",
-      "company": "WeSource",
-      "url": "https://himalayas.app/companies/wesource/jobs/sr-front-end-engineer-100-remote-nightshift-up-to-180k"
+      "score": 83.8,
+      "title": "Full Stack Engineer, Frontend-focused (Next.js + Django)",
+      "company": "DeWarmte",
+      "url": "https://www.arbeitnow.nl/jobs/companies/dewarmte/full-stack-engineer-frontend-focused-nextjs-django-the-hague-284649"
     },
     {
-      "score": 77.8,
+      "score": 81.6,
+      "title": "Platform Engineer",
+      "company": "Refractal",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/refractal/platform-engineer-london-282169"
+    },
+    {
+      "score": 81.4,
+      "title": "Backend Engineer",
+      "company": "Mytomorrows",
+      "url": "https://www.arbeitnow.nl/jobs/companies/mytomorrows/backend-engineer-amsterdam-87270"
+    },
+    {
+      "score": 77.6,
       "title": "Software Engineer / AI Code Trainer (Python, Web, Full Stack)",
       "company": "CodeForAI",
       "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-code-trainer-python-web-full-stack-2091149"
     },
     {
+      "score": 77.5,
+      "title": "Software Engineer II - (Ruby)",
+      "company": "Stora",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/stora/software-engineer-ii-ruby-belfast-475615"
+    },
+    {
+      "score": 77.4,
+      "title": "Premium Support Engineer (London, Weekend)",
+      "company": "Replit",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/replit/premium-support-engineer-london-weekend-171471"
+    },
+    {
       "score": 76.7,
-      "title": "Test Engineering",
-      "company": "Valce Talent Solutions",
-      "url": "https://himalayas.app/companies/valce-talent-solutions/jobs/test-engineering"
+      "title": "Software Engineer (Python) — Programmable Networking",
+      "company": "Telnyx",
+      "url": "https://www.arbeitnow.nl/jobs/companies/telnyx/software-engineer-python-programmable-networking-amsterdam-138589"
     },
     {
-      "score": 75.5,
-      "title": "Backend Engineer (Python),AI Engineering: Agent Foundations",
-      "company": "gitlab",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/gitlab/remote-backend-engineer-pythonai-engineering-agent-foundations-499521"
+      "score": 75.9,
+      "title": "Backend Developer (Django)",
+      "company": "DeWarmte",
+      "url": "https://www.arbeitnow.nl/jobs/companies/dewarmte/backend-developer-django-the-hague-449377"
     },
     {
-      "score": 75.0,
-      "title": "Full-Stack Software Engineer (m/f/d)",
-      "company": "TWAICE",
-      "url": "https://www.arbeitnow.com/jobs/companies/twaice/full-stack-software-engineer-munich-hybrid-420771"
-    },
-    {
-      "score": 72.5,
-      "title": "Senior AI Engineer (f/m/d)",
-      "company": "Alpas",
-      "url": "https://www.arbeitnow.com/jobs/companies/alpas/senior-ai-engineer-berlin-244282"
-    },
-    {
-      "score": 72.0,
-      "title": "Software Engineer (all genders)",
-      "company": "Raysono",
-      "url": "https://www.arbeitnow.com/jobs/companies/raysono/software-engineer-all-genders-munchen-464503"
-    },
-    {
-      "score": 71.5,
-      "title": "Junior Backend Developer - Future Position",
-      "company": "Talent Journey",
-      "url": "https://himalayas.app/companies/talent-journey/jobs/junior-backend-developer-future-position"
-    },
-    {
-      "score": 71.3,
-      "title": "Backend & Applied AI Engineer",
-      "company": "Resilience Care",
-      "url": "https://www.arbeitnow.fr/jobs/companies/resilience-care/backend-applied-ai-engineer-paris-478113"
+      "score": 75.9,
+      "title": "Full-stack Software Engineer (Contract)",
+      "company": "Lemrock",
+      "url": "https://www.arbeitnow.fr/jobs/companies/lemrock/full-stack-software-engineer-contract-paris-129905"
     }
   ],
   "email_sent": false,
