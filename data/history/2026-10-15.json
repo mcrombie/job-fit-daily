@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-15T16:59:46.801985Z",
+  "demo": false,
+  "fetched": 1621,
+  "deduplicated": 1594,
+  "eligible": 1213,
+  "rejected": 381,
+  "above_threshold": 170,
+  "shown": 50,
+  "truncated": 120,
+  "new_shown": 21,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 78,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 14,
+      "kept": 9,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 1447,
+      "kept": 1126,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 79.1,
+      "title": "Senior Full Stack Engineer (m/w/d)",
+      "company": "Placed Technologies GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/placed-technologies-gmbh/senior-full-stack-engineer-berlin-180965"
+    },
+    {
+      "score": 77.8,
+      "title": "Frontend Engineer - Agentic AI",
+      "company": "Hawk",
+      "url": "https://www.arbeitnow.com/jobs/companies/hawk/frontend-engineer-agentic-ai-munich-232885"
+    },
+    {
+      "score": 76.9,
+      "title": "Analytics Engineer",
+      "company": "Reddit",
+      "url": "https://himalayas.app/companies/reddit/jobs/analytics-engineer"
+    },
+    {
+      "score": 75.2,
+      "title": "Full-stack Software Engineer (Contract)",
+      "company": "Lemrock",
+      "url": "https://www.arbeitnow.fr/jobs/companies/lemrock/full-stack-software-engineer-contract-paris-129905"
+    },
+    {
+      "score": 73.2,
+      "title": "Support Engineer",
+      "company": "Monalee",
+      "url": "https://himalayas.app/companies/monalee/jobs/support-engineer"
+    },
+    {
+      "score": 72.2,
+      "title": "Consultant (w/m/d) Software Engineering",
+      "company": "Miebach Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/miebach-consulting-gmbh/consultant-software-engineering-frankfurt-am-main-250088"
+    },
+    {
+      "score": 71.5,
+      "title": "Support Engineer, Engineering Operations",
+      "company": "Levanta",
+      "url": "https://himalayas.app/companies/levanta/jobs/support-engineer-engineering-operations"
+    },
+    {
+      "score": 69.9,
+      "title": "Senior Fullstack AI Engineer (w/m/d)",
+      "company": "Stackfuel",
+      "url": "https://www.arbeitnow.com/jobs/companies/stackfuel/senior-fullstack-ai-engineer-berlin-436754"
+    },
+    {
+      "score": 69.8,
+      "title": "Senior AI Engineer (f/m/d)",
+      "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
+      "url": "https://www.arbeitnow.fr/jobs/companies/junior-data-scientist-downstream-demand-forecast-value-chain/senior-ai-engineer-paris-paris-199338"
+    },
+    {
+      "score": 69.3,
+      "title": "Front end Engineer",
+      "company": "Checkout.com",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/checkoutcom/front-end-engineer-london-230080"
+    }
+  ]
+}
