@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16T16:38:24.571261Z",
+  "generated_at": "2026-10-17T15:33:22.368484Z",
   "demo": false,
-  "fetched": 1599,
-  "deduplicated": 1536,
-  "eligible": 1163,
-  "rejected": 373,
-  "above_threshold": 202,
+  "fetched": 1592,
+  "deduplicated": 1510,
+  "eligible": 1115,
+  "rejected": 395,
+  "above_threshold": 161,
   "shown": 50,
-  "truncated": 152,
-  "new_shown": 24,
+  "truncated": 111,
+  "new_shown": 20,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 73,
+      "kept": 69,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
-      "fetched": 15,
+      "fetched": 13,
       "kept": 8,
       "message": ""
     },
     {
       "source": "Arbeitnow",
       "ok": true,
-      "fetched": 1424,
-      "kept": 1082,
+      "fetched": 1419,
+      "kept": 1038,
       "message": ""
     },
     {
@@ -56,64 +56,64 @@
   ],
   "top_jobs": [
     {
-      "score": 87.5,
-      "title": "Software Engineer",
-      "company": "VELAIO",
-      "url": "https://himalayas.app/companies/velaio/jobs/software-engineer"
-    },
-    {
-      "score": 80.1,
-      "title": "Forward Deployed AI Engineer",
-      "company": "CHAPTERS Group AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/chapters-group-ag/forward-deployed-ai-engineer-berlin-74468"
-    },
-    {
-      "score": 79.9,
+      "score": 78.7,
       "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
       "company": "Wypoon",
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
     },
     {
-      "score": 78.1,
-      "title": "AI Engineer",
-      "company": "commercetools",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/commercetools/ai-engineer-london-266875"
-    },
-    {
-      "score": 78.1,
+      "score": 77.0,
       "title": "AI Engineer (m/f/x)",
       "company": "commercetools",
       "url": "https://www.arbeitnow.com/jobs/companies/commercetools/ai-engineer-berlin-19322"
     },
     {
-      "score": 78.1,
+      "score": 77.0,
       "title": "AI Engineer (m/f/x)",
       "company": "commercetools",
       "url": "https://www.arbeitnow.com/jobs/companies/commercetools/ai-engineer-munchen-bayern-112395"
     },
     {
       "score": 74.5,
-      "title": "Senior AI Engineer",
-      "company": "NeueHealth",
-      "url": "https://himalayas.app/companies/neuehealth/jobs/senior-ai-engineer"
-    },
-    {
-      "score": 74.3,
-      "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
-      "company": "ElevenLabs",
-      "url": "https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-platform-engineering-200264"
+      "title": "Software Engineer (Product) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-product-london-491669"
     },
     {
       "score": 73.7,
-      "title": "Full-stack Software Engineer (Contract)",
-      "company": "Lemrock",
-      "url": "https://www.arbeitnow.fr/jobs/companies/lemrock/full-stack-software-engineer-contract-paris-129905"
+      "title": "Software Engineer (Frontend) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-frontend-london-476302"
     },
     {
-      "score": 73.5,
+      "score": 72.4,
       "title": "AI Platform Engineer – Azure & AI Infrastructure (Relocation Provided)",
       "company": "Wypoon",
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-platform-engineer-azure-ai-infrastructure-relocation-provided-amsterdam-114436"
+    },
+    {
+      "score": 72.4,
+      "title": "Robotics Software Engineer (m/f/d) AI Tools & Integration",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-software-engineer-ai-tools-integration-munich-bavaria-411352"
+    },
+    {
+      "score": 72.2,
+      "title": "Software Engineer (Mobile) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-mobile-london-81099"
+    },
+    {
+      "score": 72.0,
+      "title": "Senior Software Engineer, Search & AI",
+      "company": "Muckrack",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/muckrack/remote-senior-software-engineer-search-ai-80625"
+    },
+    {
+      "score": 71.8,
+      "title": "AI Engineer I",
+      "company": "Globalizationpartners",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/globalizationpartners/ai-engineer-i-153881"
     }
   ],
   "email_sent": false,

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-17T15:33:22.368484Z",
+  "demo": false,
+  "fetched": 1592,
+  "deduplicated": 1510,
+  "eligible": 1115,
+  "rejected": 395,
+  "above_threshold": 161,
+  "shown": 50,
+  "truncated": 111,
+  "new_shown": 20,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 69,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 13,
+      "kept": 8,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 1419,
+      "kept": 1038,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 78.7,
+      "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
+      "company": "Wypoon",
+      "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
+    },
+    {
+      "score": 77.0,
+      "title": "AI Engineer (m/f/x)",
+      "company": "commercetools",
+      "url": "https://www.arbeitnow.com/jobs/companies/commercetools/ai-engineer-berlin-19322"
+    },
+    {
+      "score": 77.0,
+      "title": "AI Engineer (m/f/x)",
+      "company": "commercetools",
+      "url": "https://www.arbeitnow.com/jobs/companies/commercetools/ai-engineer-munchen-bayern-112395"
+    },
+    {
+      "score": 74.5,
+      "title": "Software Engineer (Product) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-product-london-491669"
+    },
+    {
+      "score": 73.7,
+      "title": "Software Engineer (Frontend) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-frontend-london-476302"
+    },
+    {
+      "score": 72.4,
+      "title": "AI Platform Engineer – Azure & AI Infrastructure (Relocation Provided)",
+      "company": "Wypoon",
+      "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-platform-engineer-azure-ai-infrastructure-relocation-provided-amsterdam-114436"
+    },
+    {
+      "score": 72.4,
+      "title": "Robotics Software Engineer (m/f/d) AI Tools & Integration",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-software-engineer-ai-tools-integration-munich-bavaria-411352"
+    },
+    {
+      "score": 72.2,
+      "title": "Software Engineer (Mobile) - London",
+      "company": "Teton",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-mobile-london-81099"
+    },
+    {
+      "score": 72.0,
+      "title": "Senior Software Engineer, Search & AI",
+      "company": "Muckrack",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/muckrack/remote-senior-software-engineer-search-ai-80625"
+    },
+    {
+      "score": 71.8,
+      "title": "AI Engineer I",
+      "company": "Globalizationpartners",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/globalizationpartners/ai-engineer-i-153881"
+    }
+  ]
+}
