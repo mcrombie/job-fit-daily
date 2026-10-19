@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T15:51:34.479867Z",
+  "generated_at": "2026-10-19T18:42:34.706325Z",
   "demo": false,
-  "fetched": 1670,
-  "deduplicated": 1527,
-  "eligible": 1055,
-  "rejected": 472,
-  "above_threshold": 140,
+  "fetched": 1672,
+  "deduplicated": 1569,
+  "eligible": 1150,
+  "rejected": 419,
+  "above_threshold": 142,
   "shown": 50,
-  "truncated": 90,
-  "new_shown": 27,
+  "truncated": 92,
+  "new_shown": 23,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 95,
+      "kept": 80,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
       "fetched": 12,
-      "kept": 7,
+      "kept": 8,
       "message": ""
     },
     {
       "source": "Arbeitnow",
       "ok": true,
-      "fetched": 1498,
-      "kept": 953,
+      "fetched": 1500,
+      "kept": 1062,
       "message": ""
     },
     {
@@ -56,64 +56,64 @@
   ],
   "top_jobs": [
     {
-      "score": 78.9,
-      "title": "Customer Support Engineer",
-      "company": "Verge.io",
-      "url": "https://himalayas.app/companies/verge-io/jobs/customer-support-engineer"
+      "score": 84.0,
+      "title": "Backend Engineer (m/f/d)",
+      "company": "Care Companion GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/care-companion-gmbh/backend-engineer-berlin-43368"
+    },
+    {
+      "score": 79.6,
+      "title": "Solutions Engineer",
+      "company": "PlanetScale",
+      "url": "https://himalayas.app/companies/planetscale/jobs/solutions-engineer?utm_source=api"
     },
     {
       "score": 78.9,
+      "title": "Backend Software Engineer (Core AI)",
+      "company": "Goodweek",
+      "url": "https://www.arbeitnow.fr/jobs/companies/goodweek/backend-software-engineer-core-ai-strasbourg-22666"
+    },
+    {
+      "score": 78.1,
       "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
       "company": "Wypoon",
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
     },
     {
-      "score": 75.8,
-      "title": "AI engineer (AI & GenAI) - People Domain (f/m/d)",
-      "company": "Decathlontechnology",
-      "url": "https://www.arbeitnow.fr/jobs/companies/decathlontechnology/ai-engineer-ai-genai-people-domain-paris-paris-306403"
+      "score": 78.0,
+      "title": "Customer Engineer, APAC",
+      "company": "Cresta",
+      "url": "https://himalayas.app/companies/cresta/jobs/customer-engineer-apac?utm_source=api"
     },
     {
-      "score": 73.7,
-      "title": "Software Engineer (Product) - London",
-      "company": "Teton",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-product-london-491669"
+      "score": 78.0,
+      "title": "Working Student Software Engineering",
+      "company": "NAIRON",
+      "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
     },
     {
-      "score": 72.9,
-      "title": "Software Engineer (Frontend) - London",
-      "company": "Teton",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-frontend-london-476302"
+      "score": 77.2,
+      "title": "Full-Stack Software Engineer (React, TypeScript, Python/Django)",
+      "company": "Mindpeak",
+      "url": "https://www.arbeitnow.com/jobs/companies/mindpeak/full-stack-software-engineer-react-typescript-python-django-hamburg-388907"
     },
     {
-      "score": 72.7,
+      "score": 75.6,
+      "title": "Working Student / Werkstudent — Applied AI - Software Engineering",
+      "company": "aifano GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/aifano-gmbh/working-student-werkstudent-applied-ai-software-engineering-herford-51530"
+    },
+    {
+      "score": 73.9,
+      "title": "HealthShare Application Engineer (Remote Opportunity)",
+      "company": "VetsEZ",
+      "url": "https://himalayas.app/companies/vetsez/jobs/healthshare-application-engineer-remote-opportunity?utm_source=api"
+    },
+    {
+      "score": 71.9,
       "title": "AI Platform Engineer – Azure & AI Infrastructure (Relocation Provided)",
       "company": "Wypoon",
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-platform-engineer-azure-ai-infrastructure-relocation-provided-amsterdam-114436"
-    },
-    {
-      "score": 72.5,
-      "title": "Robotics Software Engineer (m/f/d) AI Tools & Integration",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-software-engineer-ai-tools-integration-munich-bavaria-411352"
-    },
-    {
-      "score": 71.6,
-      "title": "AI Engineer",
-      "company": "Lefebvre Sdu",
-      "url": "https://www.arbeitnow.nl/jobs/companies/lefebvre-sdu/ai-engineer-den-haag-337711"
-    },
-    {
-      "score": 71.4,
-      "title": "Software Engineer (Mobile) - London",
-      "company": "Teton",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/teton/software-engineer-mobile-london-81099"
-    },
-    {
-      "score": 71.1,
-      "title": "Senior Software Engineer, Search & AI",
-      "company": "Muckrack",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/muckrack/remote-senior-software-engineer-search-ai-80625"
     }
   ],
   "email_sent": false,
