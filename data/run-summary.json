@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T18:42:34.706325Z",
+  "generated_at": "2026-10-20T17:02:14.425987Z",
   "demo": false,
-  "fetched": 1672,
-  "deduplicated": 1569,
-  "eligible": 1150,
-  "rejected": 419,
-  "above_threshold": 142,
+  "fetched": 1670,
+  "deduplicated": 1655,
+  "eligible": 1268,
+  "rejected": 387,
+  "above_threshold": 171,
   "shown": 50,
-  "truncated": 92,
-  "new_shown": 23,
+  "truncated": 121,
+  "new_shown": 29,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 80,
+      "kept": 75,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
-      "fetched": 12,
+      "fetched": 10,
       "kept": 8,
       "message": ""
     },
@@ -29,7 +29,7 @@
       "source": "Arbeitnow",
       "ok": true,
       "fetched": 1500,
-      "kept": 1062,
+      "kept": 1185,
       "message": ""
     },
     {
@@ -56,22 +56,22 @@
   ],
   "top_jobs": [
     {
-      "score": 84.0,
+      "score": 89.2,
+      "title": "Software Engineer, Applied AI",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-applied-ai-430890"
+    },
+    {
+      "score": 83.2,
       "title": "Backend Engineer (m/f/d)",
       "company": "Care Companion GmbH",
       "url": "https://www.arbeitnow.com/jobs/companies/care-companion-gmbh/backend-engineer-berlin-43368"
     },
     {
-      "score": 79.6,
-      "title": "Solutions Engineer",
-      "company": "PlanetScale",
-      "url": "https://himalayas.app/companies/planetscale/jobs/solutions-engineer?utm_source=api"
-    },
-    {
-      "score": 78.9,
-      "title": "Backend Software Engineer (Core AI)",
-      "company": "Goodweek",
-      "url": "https://www.arbeitnow.fr/jobs/companies/goodweek/backend-software-engineer-core-ai-strasbourg-22666"
+      "score": 80.6,
+      "title": "Software Engineer, Robotics",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-robotics-169035"
     },
     {
       "score": 78.1,
@@ -80,40 +80,40 @@
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
     },
     {
-      "score": 78.0,
-      "title": "Customer Engineer, APAC",
-      "company": "Cresta",
-      "url": "https://himalayas.app/companies/cresta/jobs/customer-engineer-apac?utm_source=api"
-    },
-    {
-      "score": 78.0,
+      "score": 77.1,
       "title": "Working Student Software Engineering",
       "company": "NAIRON",
       "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
     },
     {
-      "score": 77.2,
+      "score": 76.4,
+      "title": "Full Stack Engineer",
+      "company": "Vega",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/vega/full-stack-engineer-london-285135"
+    },
+    {
+      "score": 76.1,
       "title": "Full-Stack Software Engineer (React, TypeScript, Python/Django)",
       "company": "Mindpeak",
       "url": "https://www.arbeitnow.com/jobs/companies/mindpeak/full-stack-software-engineer-react-typescript-python-django-hamburg-388907"
     },
     {
-      "score": 75.6,
+      "score": 74.7,
+      "title": "Software Engineer, Backend",
+      "company": "Adaptyv",
+      "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
+    },
+    {
+      "score": 74.6,
+      "title": "Software Engineer, Product",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-product-297213"
+    },
+    {
+      "score": 74.4,
       "title": "Working Student / Werkstudent — Applied AI - Software Engineering",
       "company": "aifano GmbH",
       "url": "https://www.arbeitnow.com/jobs/companies/aifano-gmbh/working-student-werkstudent-applied-ai-software-engineering-herford-51530"
-    },
-    {
-      "score": 73.9,
-      "title": "HealthShare Application Engineer (Remote Opportunity)",
-      "company": "VetsEZ",
-      "url": "https://himalayas.app/companies/vetsez/jobs/healthshare-application-engineer-remote-opportunity?utm_source=api"
-    },
-    {
-      "score": 71.9,
-      "title": "AI Platform Engineer – Azure & AI Infrastructure (Relocation Provided)",
-      "company": "Wypoon",
-      "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-platform-engineer-azure-ai-infrastructure-relocation-provided-amsterdam-114436"
     }
   ],
   "email_sent": false,
