@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-21T17:10:58.664368Z",
+  "demo": false,
+  "fetched": 1670,
+  "deduplicated": 1621,
+  "eligible": 1258,
+  "rejected": 363,
+  "above_threshold": 199,
+  "shown": 50,
+  "truncated": 149,
+  "new_shown": 23,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 66,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 10,
+      "kept": 7,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 1500,
+      "kept": 1185,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 88.2,
+      "title": "Software Engineer, Applied AI",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-applied-ai-430890"
+    },
+    {
+      "score": 79.6,
+      "title": "Software Engineering LMTS / PMTS - Software Factory",
+      "company": "Salesforce",
+      "url": "https://himalayas.app/companies/salesforce/jobs/software-engineering-lmts-pmts-software-factory?utm_source=api"
+    },
+    {
+      "score": 79.5,
+      "title": "Software Engineer, Robotics",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-robotics-169035"
+    },
+    {
+      "score": 78.8,
+      "title": "Lead Software Development Engineer in Test",
+      "company": "Alteryx",
+      "url": "https://himalayas.app/companies/alteryx/jobs/lead-software-development-engineer-in-test?utm_source=api"
+    },
+    {
+      "score": 78.0,
+      "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
+      "company": "Wypoon",
+      "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
+    },
+    {
+      "score": 77.1,
+      "title": "Working Student Software Engineering",
+      "company": "NAIRON",
+      "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
+    },
+    {
+      "score": 76.1,
+      "title": "Full Stack Engineer",
+      "company": "Mytomorrows",
+      "url": "https://www.arbeitnow.nl/jobs/companies/mytomorrows/full-stack-engineer-amsterdam-329815"
+    },
+    {
+      "score": 75.8,
+      "title": "Senior Software Engineer",
+      "company": "A1M Solutions",
+      "url": "https://himalayas.app/companies/a1m-solutions/jobs/senior-software-engineer?utm_source=api"
+    },
+    {
+      "score": 73.5,
+      "title": "Software Engineer, Product",
+      "company": "Circuithub",
+      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-product-297213"
+    },
+    {
+      "score": 73.4,
+      "title": "Software Engineer, Backend",
+      "company": "Adaptyv",
+      "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T17:02:14.425987Z",
+  "generated_at": "2026-10-21T17:10:58.664368Z",
   "demo": false,
   "fetched": 1670,
-  "deduplicated": 1655,
-  "eligible": 1268,
-  "rejected": 387,
-  "above_threshold": 171,
+  "deduplicated": 1621,
+  "eligible": 1258,
+  "rejected": 363,
+  "above_threshold": 199,
   "shown": 50,
-  "truncated": 121,
-  "new_shown": 29,
+  "truncated": 149,
+  "new_shown": 23,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 75,
+      "kept": 66,
       "message": ""
     },
     {
       "source": "Remotive",
       "ok": true,
       "fetched": 10,
-      "kept": 8,
+      "kept": 7,
       "message": ""
     },
     {
@@ -56,25 +56,31 @@
   ],
   "top_jobs": [
     {
-      "score": 89.2,
+      "score": 88.2,
       "title": "Software Engineer, Applied AI",
       "company": "Circuithub",
       "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-applied-ai-430890"
     },
     {
-      "score": 83.2,
-      "title": "Backend Engineer (m/f/d)",
-      "company": "Care Companion GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/care-companion-gmbh/backend-engineer-berlin-43368"
+      "score": 79.6,
+      "title": "Software Engineering LMTS / PMTS - Software Factory",
+      "company": "Salesforce",
+      "url": "https://himalayas.app/companies/salesforce/jobs/software-engineering-lmts-pmts-software-factory?utm_source=api"
     },
     {
-      "score": 80.6,
+      "score": 79.5,
       "title": "Software Engineer, Robotics",
       "company": "Circuithub",
       "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-robotics-169035"
     },
     {
-      "score": 78.1,
+      "score": 78.8,
+      "title": "Lead Software Development Engineer in Test",
+      "company": "Alteryx",
+      "url": "https://himalayas.app/companies/alteryx/jobs/lead-software-development-engineer-in-test?utm_source=api"
+    },
+    {
+      "score": 78.0,
       "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
       "company": "Wypoon",
       "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
@@ -86,34 +92,28 @@
       "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
     },
     {
-      "score": 76.4,
-      "title": "Full Stack Engineer",
-      "company": "Vega",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/vega/full-stack-engineer-london-285135"
-    },
-    {
       "score": 76.1,
-      "title": "Full-Stack Software Engineer (React, TypeScript, Python/Django)",
-      "company": "Mindpeak",
-      "url": "https://www.arbeitnow.com/jobs/companies/mindpeak/full-stack-software-engineer-react-typescript-python-django-hamburg-388907"
+      "title": "Full Stack Engineer",
+      "company": "Mytomorrows",
+      "url": "https://www.arbeitnow.nl/jobs/companies/mytomorrows/full-stack-engineer-amsterdam-329815"
     },
     {
-      "score": 74.7,
-      "title": "Software Engineer, Backend",
-      "company": "Adaptyv",
-      "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
+      "score": 75.8,
+      "title": "Senior Software Engineer",
+      "company": "A1M Solutions",
+      "url": "https://himalayas.app/companies/a1m-solutions/jobs/senior-software-engineer?utm_source=api"
     },
     {
-      "score": 74.6,
+      "score": 73.5,
       "title": "Software Engineer, Product",
       "company": "Circuithub",
       "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-product-297213"
     },
     {
-      "score": 74.4,
-      "title": "Working Student / Werkstudent — Applied AI - Software Engineering",
-      "company": "aifano GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/aifano-gmbh/working-student-werkstudent-applied-ai-software-engineering-herford-51530"
+      "score": 73.4,
+      "title": "Software Engineer, Backend",
+      "company": "Adaptyv",
+      "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
     }
   ],
   "email_sent": false,
