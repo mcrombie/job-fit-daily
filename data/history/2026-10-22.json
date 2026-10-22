@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-22T17:09:18.788079Z",
+  "demo": false,
+  "fetched": 1670,
+  "deduplicated": 1642,
+  "eligible": 1221,
+  "rejected": 421,
+  "above_threshold": 186,
+  "shown": 50,
+  "truncated": 136,
+  "new_shown": 27,
+  "source_statuses": [
+    {
+      "source": "Himalayas",
+      "ok": true,
+      "fetched": 160,
+      "kept": 76,
+      "message": ""
+    },
+    {
+      "source": "Remotive",
+      "ok": true,
+      "fetched": 10,
+      "kept": 7,
+      "message": ""
+    },
+    {
+      "source": "Arbeitnow",
+      "ok": true,
+      "fetched": 1500,
+      "kept": 1138,
+      "message": ""
+    },
+    {
+      "source": "Greenhouse",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no boards configured"
+    },
+    {
+      "source": "Lever",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "no sites configured"
+    },
+    {
+      "source": "USAJOBS",
+      "ok": true,
+      "fetched": 0,
+      "kept": 0,
+      "message": "disabled"
+    }
+  ],
+  "top_jobs": [
+    {
+      "score": 83.0,
+      "title": "Senior AI Engineer",
+      "company": "Macmillan",
+      "url": "https://himalayas.app/companies/macmillan/jobs/senior-ai-engineer?utm_source=api"
+    },
+    {
+      "score": 76.3,
+      "title": "Working Student Software Engineering",
+      "company": "NAIRON",
+      "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
+    },
+    {
+      "score": 75.4,
+      "title": "Analytics Engineer II",
+      "company": "Taxwell",
+      "url": "https://himalayas.app/companies/taxwell/jobs/analytics-engineer-ii?utm_source=api"
+    },
+    {
+      "score": 75.4,
+      "title": "AI Engineer",
+      "company": "Follo",
+      "url": "https://www.arbeitnow.nl/jobs/companies/follo/ai-engineer-dongen-63078"
+    },
+    {
+      "score": 75.1,
+      "title": "Tech Lead AI Engineering (m/w/d)",
+      "company": "Nejo",
+      "url": "https://www.arbeitnow.com/jobs/companies/nejo/tech-lead-ai-engineering-cologne-42688"
+    },
+    {
+      "score": 75.0,
+      "title": "Full Stack Engineer",
+      "company": "Mytomorrows",
+      "url": "https://www.arbeitnow.nl/jobs/companies/mytomorrows/full-stack-engineer-amsterdam-329815"
+    },
+    {
+      "score": 73.5,
+      "title": "Software Engineer, Backend",
+      "company": "Adaptyv",
+      "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
+    },
+    {
+      "score": 73.1,
+      "title": "ML Platform Engineer",
+      "company": "Bleu Robotics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/bleu-robotics/ml-platform-engineer-paris-113846"
+    },
+    {
+      "score": 72.7,
+      "title": "Software Integration Engineer (C++/Linux)",
+      "company": "Benchmark",
+      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/software-integration-engineer-c-linux-almelo-39224"
+    },
+    {
+      "score": 72.2,
+      "title": "Software Engineer (Autonomous Agents)",
+      "company": "Kraken",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/kraken/software-engineer-autonomous-agents-london-248722"
+    }
+  ]
+}

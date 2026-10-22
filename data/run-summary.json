@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T17:10:58.664368Z",
+  "generated_at": "2026-10-22T17:09:18.788079Z",
   "demo": false,
   "fetched": 1670,
-  "deduplicated": 1621,
-  "eligible": 1258,
-  "rejected": 363,
-  "above_threshold": 199,
+  "deduplicated": 1642,
+  "eligible": 1221,
+  "rejected": 421,
+  "above_threshold": 186,
   "shown": 50,
-  "truncated": 149,
-  "new_shown": 23,
+  "truncated": 136,
+  "new_shown": 27,
   "source_statuses": [
     {
       "source": "Himalayas",
       "ok": true,
       "fetched": 160,
-      "kept": 66,
+      "kept": 76,
       "message": ""
     },
     {
@@ -29,7 +29,7 @@
       "source": "Arbeitnow",
       "ok": true,
       "fetched": 1500,
-      "kept": 1185,
+      "kept": 1138,
       "message": ""
     },
     {
@@ -56,64 +56,64 @@
   ],
   "top_jobs": [
     {
-      "score": 88.2,
-      "title": "Software Engineer, Applied AI",
-      "company": "Circuithub",
-      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-applied-ai-430890"
+      "score": 83.0,
+      "title": "Senior AI Engineer",
+      "company": "Macmillan",
+      "url": "https://himalayas.app/companies/macmillan/jobs/senior-ai-engineer?utm_source=api"
     },
     {
-      "score": 79.6,
-      "title": "Software Engineering LMTS / PMTS - Software Factory",
-      "company": "Salesforce",
-      "url": "https://himalayas.app/companies/salesforce/jobs/software-engineering-lmts-pmts-software-factory?utm_source=api"
-    },
-    {
-      "score": 79.5,
-      "title": "Software Engineer, Robotics",
-      "company": "Circuithub",
-      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-robotics-169035"
-    },
-    {
-      "score": 78.8,
-      "title": "Lead Software Development Engineer in Test",
-      "company": "Alteryx",
-      "url": "https://himalayas.app/companies/alteryx/jobs/lead-software-development-engineer-in-test?utm_source=api"
-    },
-    {
-      "score": 78.0,
-      "title": "AI Engineer – Azure & Generative AI (Relocation Provided)",
-      "company": "Wypoon",
-      "url": "https://www.arbeitnow.nl/jobs/companies/wypoon/ai-engineer-azure-generative-ai-relocation-provided-amsterdam-399752"
-    },
-    {
-      "score": 77.1,
+      "score": 76.3,
       "title": "Working Student Software Engineering",
       "company": "NAIRON",
       "url": "https://www.arbeitnow.ch/jobs/companies/nairon/working-student-software-engineering-zurich-476563"
     },
     {
-      "score": 76.1,
+      "score": 75.4,
+      "title": "Analytics Engineer II",
+      "company": "Taxwell",
+      "url": "https://himalayas.app/companies/taxwell/jobs/analytics-engineer-ii?utm_source=api"
+    },
+    {
+      "score": 75.4,
+      "title": "AI Engineer",
+      "company": "Follo",
+      "url": "https://www.arbeitnow.nl/jobs/companies/follo/ai-engineer-dongen-63078"
+    },
+    {
+      "score": 75.1,
+      "title": "Tech Lead AI Engineering (m/w/d)",
+      "company": "Nejo",
+      "url": "https://www.arbeitnow.com/jobs/companies/nejo/tech-lead-ai-engineering-cologne-42688"
+    },
+    {
+      "score": 75.0,
       "title": "Full Stack Engineer",
       "company": "Mytomorrows",
       "url": "https://www.arbeitnow.nl/jobs/companies/mytomorrows/full-stack-engineer-amsterdam-329815"
     },
     {
-      "score": 75.8,
-      "title": "Senior Software Engineer",
-      "company": "A1M Solutions",
-      "url": "https://himalayas.app/companies/a1m-solutions/jobs/senior-software-engineer?utm_source=api"
-    },
-    {
       "score": 73.5,
-      "title": "Software Engineer, Product",
-      "company": "Circuithub",
-      "url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-product-297213"
-    },
-    {
-      "score": 73.4,
       "title": "Software Engineer, Backend",
       "company": "Adaptyv",
       "url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/software-engineer-backend-lausanne-154704"
+    },
+    {
+      "score": 73.1,
+      "title": "ML Platform Engineer",
+      "company": "Bleu Robotics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/bleu-robotics/ml-platform-engineer-paris-113846"
+    },
+    {
+      "score": 72.7,
+      "title": "Software Integration Engineer (C++/Linux)",
+      "company": "Benchmark",
+      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/software-integration-engineer-c-linux-almelo-39224"
+    },
+    {
+      "score": 72.2,
+      "title": "Software Engineer (Autonomous Agents)",
+      "company": "Kraken",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/kraken/software-engineer-autonomous-agents-london-248722"
     }
   ],
   "email_sent": false,
