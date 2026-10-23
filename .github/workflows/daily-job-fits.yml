@@ -8,9 +8,6 @@ on:
         required: false
         default: false
         type: boolean
-  schedule:
-    - cron: '17 8 * * *'
-      timezone: 'America/New_York'
 
 permissions:
   contents: write
